@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h1   {color: #452226;}
+h2 {color: #4b615f;}
+table, tr, td, th {border: 1px solid; text-align: left; table-layout:fixed;width:100%;}
+th {background-color: #BBB4B2;}
+td {word-wrap:break-word;}
+</style>
+</head>
+<table>
+<tr>
+<th><strong>Environment</strong></th>
+<th><strong>Total Scenarios</strong></th>
+<th><strong>Passed</strong></th>
+<th><strong>Failed</strong></th>
+<th><strong>Cucumber Tags Executed</strong></th>
+</tr>
+<tr>
+<td>PROD</td>
+<td>7</td>
+<td>7</td>
+<td>0</td>
+<td>Regression</td>
+</tr>
+ </table><h1>Scenarios for performing car search</h1><h2>Perform 'New & used' car search</h2><table>
+  <tr>
+    <th>StepType</th>
+    <th>Step Description</th>
+    <th>Step Result</th>
+  </tr><tr>
+    <td>Given </td>
+    <td>user is on the Cars Shopping page</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Info</td>
+    <td>Launched: https://www.cars.com/shopping/</td>
+    <td></td>
+  </tr><tr>
+    <td>And </td>
+    <td>user selects 'New & used' in Stock Type dropdown</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>And </td>
+    <td>user selects 'Ford' in Make dropdown</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>And </td>
+    <td>user selects 'Mustang' in Model dropdown</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>And </td>
+    <td>user selects '$60,000' in Price dropdown</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>And </td>
+    <td>user selects 'All miles from' in Distance dropdown</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>And </td>
+    <td>user enters '50131' into ZIP input</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>When </td>
+    <td>user clicks Search button</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Then </td>
+    <td>Results page should be displayed with header 'New and used Ford Mustang for sale'</td>
+    <td>PASSED</td>
+  </tr></table><h2>Perform 'New' car search</h2><table>
+  <tr>
+    <th>StepType</th>
+    <th>Step Description</th>
+    <th>Step Result</th>
+  </tr><tr>
+    <td>Given </td>
+    <td>user is on the Cars Shopping page</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Info</td>
+    <td>Launched: https://www.cars.com/shopping/</td>
+    <td></td>
+  </tr><tr>
+    <td>And </td>
+    <td>user selects 'New' in Stock Type dropdown</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>And </td>
+    <td>user selects 'Chevrolet' in Make dropdown</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>And </td>
+    <td>user selects 'Silverado 1500' in Model dropdown</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>And </td>
+    <td>user selects '$50,000' in Price dropdown</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>And </td>
+    <td>user selects '500 miles' in Distance dropdown</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>And </td>
+    <td>user enters '50131' into ZIP input</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>When </td>
+    <td>user clicks Search button</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Then </td>
+    <td>Results page should be displayed with header 'New Chevrolet Silverado 1500 for sale'</td>
+    <td>PASSED</td>
+  </tr></table><h2>Perform 'Used' car search</h2><table>
+  <tr>
+    <th>StepType</th>
+    <th>Step Description</th>
+    <th>Step Result</th>
+  </tr><tr>
+    <td>Given </td>
+    <td>user is on the Cars Shopping page</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Info</td>
+    <td>Launched: https://www.cars.com/shopping/</td>
+    <td></td>
+  </tr><tr>
+    <td>And </td>
+    <td>user selects 'Used' in Stock Type dropdown</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>And </td>
+    <td>user selects 'Audi' in Make dropdown</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>And </td>
+    <td>user selects 'S6' in Model dropdown</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>And </td>
+    <td>user selects '$45,000' in Price dropdown</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>And </td>
+    <td>user selects '250 miles' in Distance dropdown</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>And </td>
+    <td>user enters '50131' into ZIP input</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>When </td>
+    <td>user clicks Search button</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Then </td>
+    <td>Results page should be displayed with header 'Used Audi S6 for sale'</td>
+    <td>PASSED</td>
+  </tr></table><h2>Perform 'Certified' car search</h2><table>
+  <tr>
+    <th>StepType</th>
+    <th>Step Description</th>
+    <th>Step Result</th>
+  </tr><tr>
+    <td>Given </td>
+    <td>user is on the Cars Shopping page</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Info</td>
+    <td>Launched: https://www.cars.com/shopping/</td>
+    <td></td>
+  </tr><tr>
+    <td>And </td>
+    <td>user selects 'Certified' in Stock Type dropdown</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>And </td>
+    <td>user selects 'Hyundai' in Make dropdown</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>And </td>
+    <td>user selects 'Sonata' in Model dropdown</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>And </td>
+    <td>user selects '$30,000' in Price dropdown</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>And </td>
+    <td>user selects '250 miles' in Distance dropdown</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>And </td>
+    <td>user enters '50131' into ZIP input</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>When </td>
+    <td>user clicks Search button</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Then </td>
+    <td>Results page should be displayed with header 'Certified used Hyundai Sonata for sale'</td>
+    <td>PASSED</td>
+  </tr></table><h2>Perform 'New & certified' car search</h2><table>
+  <tr>
+    <th>StepType</th>
+    <th>Step Description</th>
+    <th>Step Result</th>
+  </tr><tr>
+    <td>Given </td>
+    <td>user is on the Cars Shopping page</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Info</td>
+    <td>Launched: https://www.cars.com/shopping/</td>
+    <td></td>
+  </tr><tr>
+    <td>And </td>
+    <td>user selects 'New & certified' in Stock Type dropdown</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>And </td>
+    <td>user selects 'Honda' in Make dropdown</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>And </td>
+    <td>user selects 'Accord' in Model dropdown</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>And </td>
+    <td>user selects '$40,000' in Price dropdown</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>And </td>
+    <td>user selects '150 miles' in Distance dropdown</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>And </td>
+    <td>user enters '50131' into ZIP input</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>When </td>
+    <td>user clicks Search button</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Then </td>
+    <td>Results page should be displayed with header 'New and certified used Honda Accord for sale'</td>
+    <td>PASSED</td>
+  </tr></table><h2>Validate New Model dropdown options for 'Acura'</h2><table>
+  <tr>
+    <th>StepType</th>
+    <th>Step Description</th>
+    <th>Step Result</th>
+  </tr><tr>
+    <td>Given </td>
+    <td>user is on the Cars Shopping page</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Info</td>
+    <td>Launched: https://www.cars.com/shopping/</td>
+    <td></td>
+  </tr><tr>
+    <td>And </td>
+    <td>user selects 'New' in Stock Type dropdown</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>When </td>
+    <td>user selects 'Acura' in Make dropdown</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Then </td>
+    <td>model dropdown should contain expected new model options for Make 'Acura'</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Info</td>
+    <td>Expected Options: [All models, ILX, Integra, MDX, NSX, RDX, TLX] --- Actual Options: [All models, ILX, Integra, MDX, NSX, RDX, TLX]</td>
+    <td></td>
+  </tr></table><h2>Validate New Model dropdown options for 'Buick'</h2><table>
+  <tr>
+    <th>StepType</th>
+    <th>Step Description</th>
+    <th>Step Result</th>
+  </tr><tr>
+    <td>Given </td>
+    <td>user is on the Cars Shopping page</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Info</td>
+    <td>Launched: https://www.cars.com/shopping/</td>
+    <td></td>
+  </tr><tr>
+    <td>And </td>
+    <td>user selects 'New' in Stock Type dropdown</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>When </td>
+    <td>user selects 'Buick' in Make dropdown</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Then </td>
+    <td>model dropdown should contain expected new model options for Make 'Buick'</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Info</td>
+    <td>Expected Options: [All models, Enclave, Encore, Encore GX, Envision, Envista, Skylark] --- Actual Options: [All models, Enclave, Encore, Encore GX, Envision, Envista, Skylark]</td>
+    <td></td>
+  </tr></table></body>
