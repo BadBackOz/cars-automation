@@ -33,9 +33,9 @@ dependencies {
 }
 
 test{
-    String environment = System.getProperty("env").toString().toLowerCase();
-    String parallelTestCount = System.getProperty("paralleltestcount");
-    Properties props = new Properties();
+    String environment = System.getProperty("env").toString().toLowerCase()
+    String parallelTestCount = System.getProperty("paralleltestcount")
+    Properties props = new Properties()
     File propsFile = file("src/test/resources/%s.properties".formatted(environment))
     if (propsFile.isFile()) {
         propsFile.withInputStream { props.load(it) }
@@ -45,7 +45,7 @@ test{
     }
 
     if(parallelTestCount == null){
-        parallelTestCount = "1";
+        parallelTestCount = "1"
     }
     System.setProperty("dataproviderthreadcount", parallelTestCount)
 
