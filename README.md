@@ -8,7 +8,7 @@ Tech Stack
 
 Steps to Execute Tests
  1. Create Gradle Configuration.
- 2. Set Run command to 'clean test -Denv="PROD" -Dparalleltestcount=3 -Dcucumber.filter.tags="@Smoke"'.
+ 2. Set Run command to 'clean test -Denv="PROD" -Dparalleltestcount=3 -Dcucumber.filter.tags="@Regression"'.
  3. Run configuration.
 
 Environment specific properties files
