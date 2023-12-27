@@ -12,7 +12,6 @@ import org.openqa.selenium.support.pagefactory.FieldDecorator;
 import java.lang.reflect.Field;
 
 public class CustomElementFieldDecorator implements FieldDecorator {
-
     private final SearchContext searchContext;
 
     public CustomElementFieldDecorator(SearchContext searchContext) {
@@ -27,11 +26,11 @@ public class CustomElementFieldDecorator implements FieldDecorator {
         if (findBy != null) {
             WebElement webElement = searchContext.findElement(By.xpath(findBy.xpath()));
 
-            if(CustomInputWebElement.class.isAssignableFrom(field.getType())){
+            if (CustomInputWebElement.class.isAssignableFrom(field.getType())) {
                 return new CustomInputWebElement(webElement);
-            }else if(CustomWebElement.class.isAssignableFrom(field.getType())){
+            } else if (CustomWebElement.class.isAssignableFrom(field.getType())) {
                 return new CustomWebElement(webElement);
-            }else if(CustomDropdownWebElement.class.isAssignableFrom(field.getType())){
+            } else if (CustomDropdownWebElement.class.isAssignableFrom(field.getType())) {
                 return new CustomDropdownWebElement(webElement);
             }
         }
