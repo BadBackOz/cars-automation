@@ -1,0 +1,3061 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h1   {color: #452226;}
+h2 {color: #4b615f;}
+table, tr, td, th {border: 1px solid; text-align: left; table-layout:fixed;width:100%;}
+th {background-color: #BBB4B2;}
+td {word-wrap:break-word;}
+</style>
+</head>
+<table>
+<tr>
+<th><strong>Environment</strong></th>
+<th><strong>Total Scenarios</strong></th>
+<th><strong>Passed</strong></th>
+<th><strong>Failed</strong></th>
+<th><strong>Cucumber Tags Executed</strong></th>
+</tr>
+<tr>
+<td>PROD</td>
+<td>10</td>
+<td>10</td>
+<td>0</td>
+<td>Regression</td>
+</tr>
+ </table><h1>Scenarios for performing car search</h1><h2>Perform 'New & used' car search</h2><table>
+  <tr>
+    <th>StepType</th>
+    <th>Step Description</th>
+    <th>Step Result</th>
+  </tr><tr>
+    <td>Given </td>
+    <td>user is on the Cars Shopping page</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Info</td>
+    <td>Launched: https://www.cars.com/shopping/</td>
+    <td></td>
+  </tr><tr>
+    <td>And </td>
+    <td>user selects 'New & used' in Stock Type dropdown</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>And </td>
+    <td>user selects 'Ford' in Make dropdown</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>And </td>
+    <td>user selects 'Mustang' in Model dropdown</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>And </td>
+    <td>user selects '$60,000' in Price dropdown</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>And </td>
+    <td>user selects 'All miles from' in Distance dropdown</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>And </td>
+    <td>user enters '50131' into ZIP input</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>When </td>
+    <td>user clicks Search button</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Then </td>
+    <td>Results page should be displayed with header 'New and used Ford Mustang for sale'</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Info</td>
+    <td>Count of cars found: 10,000+ matches</td>
+    <td></td>
+  </tr></table><h2>Perform 'New' car search</h2><table>
+  <tr>
+    <th>StepType</th>
+    <th>Step Description</th>
+    <th>Step Result</th>
+  </tr><tr>
+    <td>Given </td>
+    <td>user is on the Cars Shopping page</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Info</td>
+    <td>Launched: https://www.cars.com/shopping/</td>
+    <td></td>
+  </tr><tr>
+    <td>And </td>
+    <td>user selects 'New' in Stock Type dropdown</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>And </td>
+    <td>user selects 'Chevrolet' in Make dropdown</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>And </td>
+    <td>user selects 'Silverado 1500' in Model dropdown</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>And </td>
+    <td>user selects '$50,000' in Price dropdown</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>And </td>
+    <td>user selects '500 miles' in Distance dropdown</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>And </td>
+    <td>user enters '50131' into ZIP input</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>When </td>
+    <td>user clicks Search button</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Then </td>
+    <td>Results page should be displayed with header 'New Chevrolet Silverado 1500 for sale'</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Info</td>
+    <td>Count of cars found: 2,428 matches</td>
+    <td></td>
+  </tr></table><h2>Perform 'Used' car search</h2><table>
+  <tr>
+    <th>StepType</th>
+    <th>Step Description</th>
+    <th>Step Result</th>
+  </tr><tr>
+    <td>Given </td>
+    <td>user is on the Cars Shopping page</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Info</td>
+    <td>Launched: https://www.cars.com/shopping/</td>
+    <td></td>
+  </tr><tr>
+    <td>And </td>
+    <td>user selects 'Used' in Stock Type dropdown</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>And </td>
+    <td>user selects 'Audi' in Make dropdown</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>And </td>
+    <td>user selects 'S6' in Model dropdown</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>And </td>
+    <td>user selects '$45,000' in Price dropdown</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>And </td>
+    <td>user selects 'All miles from' in Distance dropdown</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>And </td>
+    <td>user enters '50131' into ZIP input</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>When </td>
+    <td>user clicks Search button</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Then </td>
+    <td>Results page should be displayed with header 'Used Audi S6 for sale'</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Info</td>
+    <td>Count of cars found: 101 matches</td>
+    <td></td>
+  </tr></table><h2>Perform 'Certified' car search</h2><table>
+  <tr>
+    <th>StepType</th>
+    <th>Step Description</th>
+    <th>Step Result</th>
+  </tr><tr>
+    <td>Given </td>
+    <td>user is on the Cars Shopping page</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Info</td>
+    <td>Launched: https://www.cars.com/shopping/</td>
+    <td></td>
+  </tr><tr>
+    <td>And </td>
+    <td>user selects 'Certified' in Stock Type dropdown</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>And </td>
+    <td>user selects 'Hyundai' in Make dropdown</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>And </td>
+    <td>user selects 'Sonata' in Model dropdown</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>And </td>
+    <td>user selects '$30,000' in Price dropdown</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>And </td>
+    <td>user selects '250 miles' in Distance dropdown</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>And </td>
+    <td>user enters '50131' into ZIP input</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>When </td>
+    <td>user clicks Search button</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Then </td>
+    <td>Results page should be displayed with header 'Certified used Hyundai Sonata for sale'</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Info</td>
+    <td>Count of cars found: 54 matches</td>
+    <td></td>
+  </tr></table><h2>Perform 'New & certified' car search</h2><table>
+  <tr>
+    <th>StepType</th>
+    <th>Step Description</th>
+    <th>Step Result</th>
+  </tr><tr>
+    <td>Given </td>
+    <td>user is on the Cars Shopping page</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Info</td>
+    <td>Launched: https://www.cars.com/shopping/</td>
+    <td></td>
+  </tr><tr>
+    <td>And </td>
+    <td>user selects 'New & certified' in Stock Type dropdown</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>And </td>
+    <td>user selects 'Honda' in Make dropdown</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>And </td>
+    <td>user selects 'Accord' in Model dropdown</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>And </td>
+    <td>user selects '$40,000' in Price dropdown</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>And </td>
+    <td>user selects '150 miles' in Distance dropdown</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>And </td>
+    <td>user enters '50131' into ZIP input</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>When </td>
+    <td>user clicks Search button</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Then </td>
+    <td>Results page should be displayed with header 'New and certified used Honda Accord for sale'</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Info</td>
+    <td>Count of cars found: 71 matches</td>
+    <td></td>
+  </tr></table><h2>Validate New Model dropdown options for 'Acura'</h2><table>
+  <tr>
+    <th>StepType</th>
+    <th>Step Description</th>
+    <th>Step Result</th>
+  </tr><tr>
+    <td>Given </td>
+    <td>user is on the Cars Shopping page</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Info</td>
+    <td>Launched: https://www.cars.com/shopping/</td>
+    <td></td>
+  </tr><tr>
+    <td>And </td>
+    <td>user selects 'New' in Stock Type dropdown</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>When </td>
+    <td>user selects 'Acura' in Make dropdown</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Then </td>
+    <td>model dropdown should contain expected new model options for Make 'Acura'</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Info</td>
+    <td>Expected Options: [All models, ILX, Integra, MDX, NSX, RDX, TLX] --- Actual Options: [All models, ILX, Integra, MDX, NSX, RDX, TLX]</td>
+    <td></td>
+  </tr></table><h2>Validate New Model dropdown options for 'Buick'</h2><table>
+  <tr>
+    <th>StepType</th>
+    <th>Step Description</th>
+    <th>Step Result</th>
+  </tr><tr>
+    <td>Given </td>
+    <td>user is on the Cars Shopping page</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Info</td>
+    <td>Launched: https://www.cars.com/shopping/</td>
+    <td></td>
+  </tr><tr>
+    <td>And </td>
+    <td>user selects 'New' in Stock Type dropdown</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>When </td>
+    <td>user selects 'Buick' in Make dropdown</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Then </td>
+    <td>model dropdown should contain expected new model options for Make 'Buick'</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Info</td>
+    <td>Expected Options: [All models, Enclave, Encore, Encore GX, Envision, Envista, Skylark] --- Actual Options: [All models, Enclave, Encore, Encore GX, Envision, Envista, Skylark]</td>
+    <td></td>
+  </tr></table><h2>Get used vehicle data for 'A6'</h2><table>
+  <tr>
+    <th>StepType</th>
+    <th>Step Description</th>
+    <th>Step Result</th>
+  </tr><tr>
+    <td>Given </td>
+    <td>user is on the Cars Shopping page</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Info</td>
+    <td>Launched: https://www.cars.com/shopping/</td>
+    <td></td>
+  </tr><tr>
+    <td>And </td>
+    <td>user selects 'Used' in Stock Type dropdown</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>And </td>
+    <td>user selects 'Audi' in Make dropdown</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>And </td>
+    <td>user selects 'A6' in Model dropdown</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>And </td>
+    <td>user selects '$20,000' in Price dropdown</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>And </td>
+    <td>user selects 'All miles from' in Distance dropdown</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>And </td>
+    <td>user enters '50312' into ZIP input</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>When </td>
+    <td>user clicks Search button</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Then </td>
+    <td>Results page should be displayed with header 'Used Audi A6 for sale'</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Info</td>
+    <td>Count of cars found: 566 matches</td>
+    <td></td>
+  </tr><tr>
+    <td>And </td>
+    <td>log details of each used vehicle found</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2011 Audi A6 3.0 Premium quattro","mileage":"31,367 mi.","price":"$17,777","seller":"U Car Connect"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2012 Audi A6 3.0T Premium quattro","mileage":"122,043 mi.","price":"$10,995","seller":"Twin City Auto Mall Inc"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2015 Audi A6 3.0T Premium Plus","mileage":"92,946 mi.","price":"$15,995","seller":"Auto House of Bloomington"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2017 Audi A6 2.0T Premium Plus","mileage":"103,998 mi.","price":"$17,990","seller":"Car City Inc"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 2.0T Premium Plus","mileage":"101,585 mi.","price":"$17,490","seller":"Gillespie Ford"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2011 Audi A6 3.0 Premium Plus quattro","mileage":"129,517 mi.","price":"$8,500","seller":"Corwin Honda"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2018 Audi A6 2.0T Premium Plus","mileage":"95,768 mi.","price":"$17,999","seller":"GTX Auto Group INC"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 3.0T Prestige","mileage":"99,939 mi.","price":"$19,995","seller":"Beck\u0027s Auto Group"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2012 Audi A6 3.0T Prestige quattro","mileage":"154,586 mi.","price":"$7,995","seller":"Steve White Volkswagen Audi - Greenville"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 2.0T Premium","mileage":"94,415 mi.","price":"$14,875","seller":"Round Rock Nissan"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2015 Audi A6 2.0T Premium Plus","mileage":"99,089 mi.","price":"$13,900","seller":"Northside Lexus"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2015 Audi A6 3.0T Premium Plus","mileage":"68,188 mi.","price":"$19,750","seller":"Bemer Motor Cars"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2008 Audi A6 3.2","mileage":"32,819 mi.","price":"$10,849","seller":"Precise Automotive Group"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 3.0T Premium Plus","mileage":"165,688 mi.","price":"$12,084","seller":"Audi Hilton Head"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2015 Audi A6 3.0T Premium Plus","mileage":"95,051 mi.","price":"$13,480","seller":"Seasell Auto"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2015 Audi A6 3.0T Prestige","mileage":"86,833 mi.","price":"$18,071","seller":"Berlin City Nissan of Portland"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 3.0T Premium Plus","mileage":"111,591 mi.","price":"$11,996","seller":"BMW of Fort Myers"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2017 Audi A6 2.0T Premium Plus","mileage":"40,292 mi.","price":"$19,500","seller":"North Fort Lauderdale Subaru"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 3.0T Premium Plus","mileage":"68,923 mi.","price":"$16,998","seller":"HGreg.com Doral"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2012 Audi A6 3.0T Prestige quattro","mileage":"41,616 mi.","price":"$18,899","seller":"VIP Autos"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2018 Audi A6 3.0t Sport","mileage":"120,031 mi.","price":"$19,422","seller":"Volkswagen of Eau Claire"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 2.0T Premium Plus","mileage":"99,128 mi.","price":"$16,500","seller":"Car City Inc"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2012 Audi A6 3.0T Prestige quattro","mileage":"122,959 mi.","price":"$11,499","seller":"Larry Roesch Volkswagen"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2015 Audi A6 3.0T Premium Plus","mileage":"92,050 mi.","price":"$16,997","seller":"Adam Auto Group"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2012 Audi A6 3.0T Premium quattro","mileage":"129,914 mi.","price":"$11,454","seller":"Adam Auto Group"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2014 Audi A6 3.0T Premium Plus","mileage":"91,960 mi.","price":"$14,499","seller":"Your Choice Auto Sales of Posen"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 2.0T Premium Plus","mileage":"57,827 mi.","price":"$19,999","seller":"B\u0026B Auto Sales"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2015 Audi A6 3.0T Prestige","mileage":"74,001 mi.","price":"$20,000","seller":"Carmel Motors"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2015 Audi A6 3.0T Premium Plus","mileage":"69,264 mi.","price":"$18,500","seller":"Carmel Motors"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2013 Audi A6 3.0T Premium Plus quattro","mileage":"73,854 mi.","price":"$15,900","seller":"Sundance Chevrolet"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2017 Audi A6 2.0T Premium quattro","mileage":"98,789 mi.","price":"$14,683","seller":"Busam Subaru"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2015 Audi A6 2.0T Premium","mileage":"81,164 mi.","price":"$17,497","seller":"GTX Auto Group INC"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 3.0T Premium Plus","mileage":"102,624 mi.","price":"$15,999","seller":"Nashville Speed Shop LLC"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2013 Audi A6 3.0T Premium Plus quattro","mileage":"87,133 mi.","price":"$16,485","seller":"Columbus Auto Source"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2012 Audi A6 3.0T Premium Plus quattro","mileage":"137,162 mi.","price":"$8,950","seller":"High Desert Auto Wholesale"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2017 Audi A6 2.0T Premium","mileage":"82,508 mi.","price":"$15,995","seller":"Incredible Auto Sales"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2015 Audi A6 3.0T Premium Plus","mileage":"109,627 mi.","price":"$11,987","seller":"Excel Auto Lounge"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2013 Audi A6 3.0T Prestige quattro","mileage":"63,937 mi.","price":"$15,995","seller":"B \u0026 B Auto"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2015 Audi A6 2.0T Premium Plus","mileage":"37,514 mi.","price":"$18,277","seller":"Ken Garff St. George Ford"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2015 Audi A6 2.0T Premium Plus","mileage":"82,875 mi.","price":"$12,999","seller":"Shiv"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 2.0T Premium Plus","mileage":"80,760 mi.","price":"$15,998","seller":"BG Motorcars"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2014 Audi A6 2.0T Premium quattro","mileage":"91,819 mi.","price":"$14,895","seller":"Luxury Car Outlet"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 3.0T Premium Plus","mileage":"94,907 mi.","price":"$16,999","seller":"Dart Motors"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 2.0T Premium Plus","mileage":"114,833 mi.","price":"$14,999","seller":"Dart Motors"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2013 Audi A6 2.0T Premium Plus","mileage":"99,707 mi.","price":"$12,985","seller":"Xchange Motors"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2015 Audi A6 3.0T Prestige","mileage":"142,822 mi.","price":"$11,945","seller":"Top Gear Motors"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2014 Audi A6 3.0T Prestige quattro","mileage":"82,848 mi.","price":"$17,777","seller":"Alpha Luxury Motors"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2014 Audi A6 3.0T Premium Plus quattro","mileage":"117,505 mi.","price":"$12,985","seller":"Chicago Cars US"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2015 Audi A6 3.0T Prestige","mileage":"108,755 mi.","price":"$14,985","seller":"Chicago Cars US"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2015 Audi A6 2.0T Premium Plus","mileage":"110,568 mi.","price":"$13,925","seller":"Adam Auto Group"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 3.0T Premium Plus","mileage":"101,106 mi.","price":"$16,899","seller":"Mike Haggerty Buick GMC"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2015 Audi A6 2.0T Premium Plus","mileage":"110,257 mi.","price":"$12,995","seller":"Michigan City Auto"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2013 Audi A6 2.0T Premium Plus","mileage":"114,588 mi.","price":"$11,801","seller":"Crippen Automotive"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 3.0T Premium Plus","mileage":"101,848 mi.","price":"$15,995","seller":"Elite Imports LLC"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2017 Audi A6 2.0T Premium quattro","mileage":"98,902 mi.","price":"$18,995","seller":"Premier Automotive"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2014 Audi A6 3.0 TDI Prestige quattro","mileage":"199,999 mi.","price":"$12,963","seller":"Columbus Luxury Cars"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2015 Audi A6 3.0T Premium Plus","mileage":"87,416 mi.","price":"$17,491","seller":"Nalley Acura"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2011 Audi A6 Prestige","mileage":"124,859 mi.","price":"$8,995","seller":"CAR ISLAND"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2014 Audi A6 2.0T Premium quattro","mileage":"78,247 mi.","price":"$11,989","seller":"Florida Fine Cars Miami"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2014 Audi A6 3.0T Premium Plus","mileage":"100,148 mi.","price":"$15,995","seller":"Rickie\u0027s Auto LLC"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2014 Audi A6 3.0 TDI Prestige quattro","mileage":"94,636 mi.","price":"$17,498","seller":"BG Motorcars"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2015 Audi A6 3.0T Premium Plus","mileage":"101,411 mi.","price":"$14,777","seller":"Castle Chrysler Dodge Jeep Ram of Naperville"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2013 Audi A6 2.0T Premium Plus quattro","mileage":"99,424 mi.","price":"$12,995","seller":"Woodfield Lexus"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2015 Audi A6 3.0 TDI Premium Plus","mileage":"92,000 mi.","price":"$19,495","seller":"EMH Motors"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 3.0T Premium Plus","mileage":"93,356 mi.","price":"$18,490","seller":"Auto Gallery Chicago"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2015 Audi A6 3.0T Premium Plus","mileage":"108,538 mi.","price":"$13,488","seller":"McGrath Acura of Westmont"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 3.0T Premium Plus","mileage":"73,646 mi.","price":"$19,810","seller":"McGrath Lexus of Westmont"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 3.0T Premium Plus","mileage":"101,318 mi.","price":"$16,900","seller":"Haus of Imports"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 2.0T Premium Plus","mileage":"138,875 mi.","price":"$12,499","seller":"Your Choice Autos Waukegan"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 3.0T Prestige","mileage":"116,050 mi.","price":"$16,875","seller":"Adam Auto Group"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2015 Audi A6 3.0T Premium Plus","mileage":"101,385 mi.","price":"$17,985","seller":"Luxury Auto Selection"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2006 Audi A6 4.2L","mileage":"154,476 mi.","price":"$5,499","seller":"Your Choice Auto Sales of Posen"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2013 Audi A6 2.0T Premium Plus","mileage":"117,272 mi.","price":"$12,495","seller":"Michigan City Auto"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2013 Audi A6 3.0T Premium Plus quattro","mileage":"116,184 mi.","price":"$11,499","seller":"Automotive Connection"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2005 Audi A6 3.2 quattro","mileage":"167,699 mi.","price":"$6,995","seller":"Wholesale Direct Motors"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 2.0T Premium Plus","mileage":"172,209 mi.","price":"$12,495","seller":"Southwest Auto Sales"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2014 Audi A6 2.0T Premium Plus quattro","mileage":"98,049 mi.","price":"$12,500","seller":"SKCO Automotive"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2013 Audi A6 2.0T Premium Plus quattro","mileage":"116,040 mi.","price":"$14,495","seller":"Eastern Shore Motors"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 3.0T Premium Plus","mileage":"102,466 mi.","price":"$14,990","seller":"Magic Auto Sales"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 3.0T Prestige","mileage":"93,005 mi.","price":"$16,995","seller":"European Engineering"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2013 Audi A6 3.0T Prestige quattro","mileage":"76,174 mi.","price":"$16,588","seller":"Granger Motors"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2012 Audi A6 3.0T Premium Plus quattro","mileage":"61,607 mi.","price":"$14,980","seller":"BMW of Kansas City South"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2012 Audi A6 3.0T Premium Plus quattro","mileage":"77,374 mi.","price":"$13,500","seller":"City Volkswagen Of Evanston"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2014 Audi A6 2.0T Premium quattro","mileage":"72,978 mi.","price":"$12,495","seller":"Performance Chrysler Jeep Dodge Ram Delaware"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 2.0T Premium Plus","mileage":"95,207 mi.","price":"$17,888","seller":"Hugh White Honda"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2012 Audi A6 3.0T Prestige quattro","mileage":"148,465 mi.","price":"$9,369","seller":"Columbus Luxury Cars"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2015 Audi A6 3.0T Premium Plus","mileage":"71,289 mi.","price":"$17,794","seller":"Jeff Wyler Columbus Auto Mall"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 3.0T Premium Plus","mileage":"100,869 mi.","price":"$17,541","seller":"BMW of Gwinnett Place"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 2.0T Premium Plus","mileage":"78,745 mi.","price":"$16,994","seller":"Evolution Cars"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 2.0T Premium Plus","mileage":"83,649 mi.","price":"$17,499","seller":"Keating Honda"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2014 Audi A6 2.0T Premium Plus quattro","mileage":"102,214 mi.","price":"$11,997","seller":"AutoNation Ford Katy"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 2.0T Premium Plus","mileage":"72,339 mi.","price":"$17,995","seller":"R\u0026T Expo"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2017 Audi A6 2.0T Premium Plus","mileage":"93,744 mi.","price":"$15,800","seller":"RITECAR LLC"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 2.0T Premium Plus","mileage":"59,171 mi.","price":"$16,990","seller":"Auto Hub"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2017 Audi A6 3.0T Premium Plus","mileage":"125,897 mi.","price":"$12,995","seller":"Nemir Auto Sales"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 3.0T Premium Plus","mileage":"100,689 mi.","price":"$12,985","seller":"Gettel Lincoln of Charlotte County"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2003 Audi A6 3.0 quattro","mileage":"111,383 mi.","price":"$4,987","seller":"Kendall Volkswagen of Bend"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 2.0T Premium Plus","mileage":"77,859 mi.","price":"$16,990","seller":"Armstrong VW"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2013 Audi A6 3.0T Prestige quattro","mileage":"80,742 mi.","price":"$16,990","seller":"Armstrong VW"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2015 Audi A6 2.0T Premium Plus","mileage":"82,213 mi.","price":"$16,998","seller":"CarMax Oxnard - Offering Express Pickup and Home Delivery"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2017 Audi A6 2.0T Premium","mileage":"106,084 mi.","price":"$17,995","seller":"South West Sales"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2008 Audi A6 3.2 quattro","mileage":"158,216 mi.","price":"$6,995","seller":"Kuehn Motor Company, Rochester"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2008 Audi A6 3.2 (A6)","mileage":"132,392 mi.","price":"$7,299","seller":"Your Choice Auto Sales of Elgin"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 3.0T Premium Plus","mileage":"97,356 mi.","price":"$15,299","seller":"EchoPark Automotive Dallas"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2013 Audi A6 3.0T Premium Plus quattro","mileage":"90,804 mi.","price":"$15,895","seller":"Beck \u0026 Masten Buick GMC North"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2017 Audi A6 2.0T Premium","mileage":"72,038 mi.","price":"$18,995","seller":"R\u0026T Expo"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2013 Audi A6 3.0T Premium Plus quattro","mileage":"66,443 mi.","price":"$19,998","seller":"CarMax Southwest Freeway - Offering Express Pickup and Home Delivery"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 3.0T Premium Plus","mileage":"89,476 mi.","price":"$19,890","seller":"Larry H. Miller Used Car Supermarket Sandy"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 3.0T Premium Plus","mileage":"112,059 mi.","price":"$14,250","seller":"Magic Auto Sales"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2013 Audi A6 3.0T Premium Plus quattro","mileage":"35,868 mi.","price":"$17,001","seller":"INFINITI of Englewood"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2013 Audi A6 3.0T Prestige","mileage":"119,600 mi.","price":"$13,999","seller":"Arizona Drive LLC"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2015 Audi A6 2.0T Premium Plus","mileage":"73,834 mi.","price":"$18,998","seller":"CarMax Ft. Myers - Offering Express Pickup and Home Delivery"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 2.0T Premium Plus","mileage":"73,829 mi.","price":"$17,000","seller":"Lee Auto Group"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 3.0T Premium Plus","mileage":"96,065 mi.","price":"$19,999","seller":"Aneels Wheels LLC"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 3.0T Premium Plus","mileage":"124,965 mi.","price":"$13,897","seller":"Ron Tonkin Chevrolet"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2015 Audi A6 2.0T Premium Plus","mileage":"90,240 mi.","price":"$14,240","seller":"Skyline Ford"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2012 Audi A6 3.0 Premium quattro","mileage":"109,693 mi.","price":"$11,998","seller":"Pleasant Hill Motor Cars"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2015 Audi A6 2.0T Premium Plus","mileage":"175,749 mi.","price":"$8,998","seller":"Auto World"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2014 Audi A6 3.0T Prestige quattro","mileage":"82,646 mi.","price":"$18,998","seller":"CarMax Santa Rosa - Offering Express Pickup and Home Delivery"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2014 Audi A6 2.0T Premium Plus quattro","mileage":"80,278 mi.","price":"$18,998","seller":"CarMax Santa Rosa - Offering Express Pickup and Home Delivery"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2014 Audi A6 3.0T Premium Plus","mileage":"157,963 mi.","price":"$10,999","seller":"Your Choice Auto Sales of Elgin"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2012 Audi A6 3.0T Premium Plus","mileage":"141,151 mi.","price":"$10,499","seller":"My Choice Motors of Elmhurst"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2012 Audi A6 3.0T Prestige","mileage":"126,851 mi.","price":"$13,950","seller":"Auto Park Imports"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 2.0T Premium quattro","mileage":"87,503 mi.","price":"$19,998","seller":"CarMax Independence Boulevard - Offering Express Pickup and Home Delivery"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 2.0T Premium Plus","mileage":"103,650 mi.","price":"$14,490","seller":"Auto Valley Group"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 3.0T Premium Plus","mileage":"84,973 mi.","price":"$17,895","seller":"GT Motors"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2018 Audi A6 2.0T Premium quattro","mileage":"98,672 mi.","price":"$16,581","seller":"Auto Show US"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 2.0T Premium Plus","mileage":"84,848 mi.","price":"$14,900","seller":"Auto Show US"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2015 Audi A6 3.0T Premium Plus","mileage":"80,715 mi.","price":"$16,499","seller":"Auto Show US"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 2.0T Premium Plus","mileage":"75,001 mi.","price":"$17,759","seller":"East Coast Auto Group of Linden"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2014 Audi A6 2.0T Premium Plus quattro","mileage":"101,671 mi.","price":"$11,795","seller":"Elite Motor Cars"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2014 Audi A6 3.0T Prestige quattro","mileage":"115,067 mi.","price":"$13,795","seller":"Cars Buyer Inc"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2017 Audi A6 2.0T Premium quattro","mileage":"75,925 mi.","price":"$17,970","seller":"Milan Motors, LLC"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2018 Audi A6 2.0T Premium quattro","mileage":"98,515 mi.","price":"$18,789","seller":"Adams Auto Group of Little Ferry"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2014 Audi A6 2.0T Premium Plus quattro","mileage":"119,216 mi.","price":"$10,995","seller":"Tuckahoe Autoland"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 3.0T Premium quattro","mileage":"87,037 mi.","price":"$15,995","seller":"Michaels Motorcars, Inc."}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2017 Audi A6 2.0T Premium","mileage":"129,779 mi.","price":"$16,300","seller":"Brooklyn Auto Mall"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2008 Audi A6 3.2 quattro","mileage":"160,000 mi.","price":"$6,250","seller":"fernando"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2007 Audi A6 3.2 quattro","mileage":"21,911 mi.","price":"$10,995","seller":"Black Diamond Auto Sales Inc"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2014 Audi A6 3.0 TDI Premium Plus quattro","mileage":"91,680 mi.","price":"$16,995","seller":"Silicon Valley Enthusiast"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2008 Audi A6 3.2 Avant quattro","mileage":"78,803 mi.","price":"$15,850","seller":"Audi Richfield"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 3.0T Premium Plus","mileage":"85,746 mi.","price":"$19,495","seller":"AutoNation USA St. Louis"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2013 Audi A6 3.0T Premium Plus quattro","mileage":"84,000 mi.","price":"$15,988","seller":"Vogue Motor Company"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2015 Audi A6 2.0T Premium","mileage":"92,199 mi.","price":"$15,995","seller":"Best Bet Auto"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2012 Audi A6 3.0T Prestige quattro","mileage":"128,382 mi.","price":"$7,995","seller":"Cherokee Auto Sales"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 2.0T Premium","mileage":"60,548 mi.","price":"$19,500","seller":"Lou Sobh Honda"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 2.0T Premium Plus","mileage":"136,634 mi.","price":"$12,999","seller":"Georgia Auto Dealer LLC"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2005 Audi A6 4.2 quattro","mileage":"79,502 mi.","price":"$9,600","seller":"Kane Auto Sales"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2012 Audi A6 3.0T Premium Plus quattro","mileage":"198,760 mi.","price":"$6,997","seller":"Heritage Volkswagen"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2015 Audi A6 2.0T Premium Plus","mileage":"93,892 mi.","price":"$14,648","seller":"Audi Hilton Head"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2013 Audi A6 2.0T Premium Plus quattro","mileage":"101,362 mi.","price":"$12,995","seller":"Auto Trade Corp"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2014 Audi A6 2.0T Premium Plus quattro","mileage":"128,828 mi.","price":"$9,550","seller":"Magic Auto Sales"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2015 Audi A6 3.0T Prestige","mileage":"160,211 mi.","price":"$11,197","seller":"Circle Hyundai"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2012 Audi A6 3.0 Premium quattro","mileage":"102,389 mi.","price":"$9,995","seller":"Tuckahoe Autoland"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2014 Audi A6 2.0T Premium Plus","mileage":"95,964 mi.","price":"$12,900","seller":"Brightway Auto Sales - Orange Park"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2015 Audi A6 3.0T Prestige","mileage":"87,255 mi.","price":"$16,991","seller":"AutoNation Toyota Winter Park"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2014 Audi A6 2.0T Premium Plus quattro","mileage":"100,192 mi.","price":"$13,999","seller":"Arizona Drive LLC"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2014 Audi A6 2.0T Premium Plus quattro","mileage":"101,720 mi.","price":"$12,995","seller":"Trucks and More LLC"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2018 Audi A6 2.0T Premium","mileage":"102,700 mi.","price":"$16,795","seller":"Lexus of Palm Beach"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2013 Audi A6 2.0T Premium Plus","mileage":"67,046 mi.","price":"$15,599","seller":"Rairdon\u0027s Volkswagen of Everett"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2014 Audi A6 3.0T Premium Plus quattro","mileage":"93,369 mi.","price":"$13,990","seller":"International Car Center"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2014 Audi A6 3.0T Prestige quattro","mileage":"97,121 mi.","price":"$17,281","seller":"American Auto Outlet"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2013 Audi A6 3.0T Premium Plus quattro","mileage":"122,750 mi.","price":"$12,833","seller":"Chelsea Motors"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2006 Audi A6 4.2 quattro","mileage":"121,726 mi.","price":"$7,999","seller":"One Stop Motors LLC"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2010 Audi A6 3.2 Premium Plus","mileage":"136,033 mi.","price":"$6,498","seller":"Mac Motors"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2018 Audi A6 2.0T Premium","mileage":"91,560 mi.","price":"$18,200","seller":"Grand Motorcars"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2014 Audi A6 2.0T Premium quattro","mileage":"75,594 mi.","price":"$19,998","seller":"CarMax Norcross - Offering Express Pickup and Home Delivery"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 3.0T Premium Plus","mileage":"119,572 mi.","price":"$14,891","seller":"Nalley Toyota Stonecrest"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2018 Audi A6 2.0T Premium","mileage":"117,179 mi.","price":"$16,000","seller":"Trimax Auto Group"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 2.0T Premium Plus","mileage":"109,394 mi.","price":"$15,350","seller":"Trimax Auto Group"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2012 Audi A6 3.0T Premium quattro","mileage":"117,098 mi.","price":"$11,995","seller":"Cars USA"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2014 Audi A6 3.0 TDI Prestige quattro","mileage":"111,633 mi.","price":"$14,498","seller":"Merit Auto Group"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2013 Audi A6 3.0T Premium Plus quattro","mileage":"73,827 mi.","price":"$15,495","seller":"Athol Motors, Inc."}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 2.0T Premium Plus","mileage":"126,887 mi.","price":"$13,499","seller":"GAA Auto Sales"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2015 Audi A6 3.0T Premium Plus","mileage":"110,600 mi.","price":"$16,000","seller":"Trevor"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2013 Audi A6 2.0T Premium Plus","mileage":"67,165 mi.","price":"$15,995","seller":"Avon Auto Brokers"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 3.0T Premium Plus","mileage":"96,183 mi.","price":"$15,999","seller":"Ally Motors"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2013 Audi A6 3.0T Prestige quattro","mileage":"129,417 mi.","price":"$12,995","seller":"Auto Sales Express"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2013 Audi A6 2.0T Premium Plus quattro","mileage":"124,154 mi.","price":"$11,995","seller":"Auto Sales Express"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2013 Audi A6 3.0T Premium Plus quattro","mileage":"99,613 mi.","price":"$13,499","seller":"Del Sol Auto Sales"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2015 Audi A6 3.0T Premium Plus","mileage":"93,882 mi.","price":"$19,995","seller":"Windy City Motors"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2014 Audi A6 3.0T Premium Plus quattro","mileage":"110,262 mi.","price":"$16,877","seller":"Mt. Moriah Auto Sales, Inc."}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2013 Audi A6 3.0T Premium Plus quattro","mileage":"111,416 mi.","price":"$16,048","seller":"Audi Fort Worth"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2015 Audi A6 3.0T Premium Plus","mileage":"84,635 mi.","price":"$16,995","seller":"R\u0026T Expo"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2017 Audi A6 3.0T Premium Plus","mileage":"81,741 mi.","price":"$19,711","seller":"Hendrick Southpoint Auto Mall"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2010 Audi A6 3.0 Premium Plus quattro","mileage":"119,210 mi.","price":"$8,995","seller":"AutoTrend \u0026 Trucks"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2015 Audi A6 3.0T Prestige","mileage":"95,953 mi.","price":"$12,895","seller":"National Motors of Ellicott City"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2017 Audi A6 2.0T Premium quattro","mileage":"63,377 mi.","price":"$18,648","seller":"Action Auto Sales and Finance Inc."}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2013 Audi A6 2.0T Premium Plus quattro","mileage":"122,038 mi.","price":"$12,500","seller":"Auto Express"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2014 Audi A6 2.0T Premium Plus quattro","mileage":"107,173 mi.","price":"$12,450","seller":"Mark\u0027s Discount Truck \u0026 Auto Sales"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 2.0T Premium Plus","mileage":"78,900 mi.","price":"$18,301","seller":"Audi Peabody"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2017 Audi A6 3.0T Prestige","mileage":"101,667 mi.","price":"$17,799","seller":"Autocenter Sales \u0026 Service"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2017 Audi A6 2.0T Premium quattro","mileage":"73,595 mi.","price":"$18,399","seller":"Right Price Motors"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2017 Audi A6 2.0T Premium","mileage":"77,494 mi.","price":"$17,454","seller":"Mercedes-Benz of Pembroke Pines"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2018 Audi A6 2.0T Premium","mileage":"75,558 mi.","price":"$18,690","seller":"Bomnin Chevrolet West Kendall"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2012 Audi A6 2.0T Premium","mileage":"103,871 mi.","price":"$10,490","seller":"Yans Auto Group"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 3.0T Prestige","mileage":"136,991 mi.","price":"$14,999","seller":"Sports Cars International"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 2.0T Premium","mileage":"62,572 mi.","price":"$19,999","seller":"BabaCars"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2012 Audi A6 3.0 Premium quattro","mileage":"99,089 mi.","price":"$13,495","seller":"Nmotion Motors"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2014 Audi A6 2.0T Premium","mileage":"91,033 mi.","price":"$13,495","seller":"Nmotion Motors"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2008 Audi A6 3.2 quattro","mileage":"97,766 mi.","price":"$8,999","seller":"Car King"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2011 Audi A6 3.0 Premium quattro","mileage":"62,286 mi.","price":"$13,969","seller":"Lupient Kia Milwaukee"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2014 Audi A6 2.0T Premium Plus quattro","mileage":"80,883 mi.","price":"$10,500","seller":"Tom Gray Auto Sales"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 2.0T Premium Plus","mileage":"100,055 mi.","price":"$14,500","seller":"Tom Gray Auto Sales"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2011 Audi A6 3.2 Premium","mileage":"152,297 mi.","price":"$8,899","seller":"Springs Automotive Group"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2013 Audi A6 2.0T Premium Plus","mileage":"30,635 mi.","price":"$17,750","seller":"Westgate Chrysler Jeep Dodge Ram"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2017 Audi A6 3.0T Premium Plus","mileage":"135,416 mi.","price":"$16,998","seller":"Phoenix Motors"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2008 Audi A6 3.2","mileage":"128,656 mi.","price":"$5,995","seller":"NJM Auto Group"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 3.0T Premium Plus","mileage":"103,198 mi.","price":"$15,850","seller":"Magic Auto Sales"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 3.0T Premium Plus","mileage":"85,684 mi.","price":"$19,995","seller":"Auto House USA"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2015 Audi A6 3.0T Premium Plus","mileage":"113,008 mi.","price":"$15,450","seller":"Shaws Auto Sales"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 2.0T Premium Plus","mileage":"98,100 mi.","price":"$16,200","seller":"Reliant Motors"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2013 Audi A6 3.0T Premium Plus quattro","mileage":"53,507 mi.","price":"$19,995","seller":"405 Motors"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 2.0T Premium Plus","mileage":"94,386 mi.","price":"$16,950","seller":"LKL Motors"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2012 Audi A6 3.0T Prestige quattro","mileage":"88,766 mi.","price":"$15,999","seller":"Armadillo Auto Sales"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2018 Audi A6 2.0T Premium","mileage":"89,847 mi.","price":"$17,999","seller":"Maple Leaf Motors"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2014 Audi A6 3.0T Premium Plus quattro","mileage":"123,025 mi.","price":"$12,980","seller":"PNW Luxury Cars"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2015 Audi A6 2.0T Premium Plus","mileage":"83,773 mi.","price":"$14,477","seller":"PNW Luxury Cars of Tacoma"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2014 Audi A6 2.0T Premium Plus quattro","mileage":"99,129 mi.","price":"$11,999","seller":"Vista Auto Sales"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2013 Audi A6 3.0T Prestige quattro","mileage":"99,712 mi.","price":"$17,999","seller":"International Autohaus"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2014 Audi A6 3.0T Prestige","mileage":"143,100 mi.","price":"$17,000","seller":"Dan"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2014 Audi A6 2.0T Premium Plus quattro","mileage":"83,684 mi.","price":"$14,500","seller":"Car City Inc"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2013 Audi A6 2.0T Premium quattro","mileage":"130,817 mi.","price":"$11,750","seller":"Van Horn Budget Auto of Plymouth"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2013 Audi A6 3.0T Premium Plus quattro","mileage":"65,651 mi.","price":"$18,012","seller":"F1rst Motors"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2014 Audi A6 3.0T Premium Plus quattro","mileage":"89,800 mi.","price":"$15,500","seller":"Selective Motors"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2017 Audi A6 2.0T Premium Plus","mileage":"78,871 mi.","price":"$19,500","seller":"Carmel Motors"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2014 Audi A6 2.0T Premium Plus quattro","mileage":"123,660 mi.","price":"$9,999","seller":"Indianapolis Motor Sports"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2015 Audi A6 2.0T Premium quattro","mileage":"111,660 mi.","price":"$12,995","seller":"Z Imports"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2015 Audi A6 2.0T Premium Plus","mileage":"95,640 mi.","price":"$13,500","seller":"Tom Gray Auto Sales"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2012 Audi A6 3.0 Premium quattro","mileage":"102,750 mi.","price":"$13,495","seller":"Auto Union Inc. of Lebanon"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 2.0T Premium Plus","mileage":"88,500 mi.","price":"$13,000","seller":"Kashif"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2015 Audi A6 3.0T Premium Plus","mileage":"84,428 mi.","price":"$16,995","seller":"Squared Auto"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2013 Audi A6 2.0T Premium Plus","mileage":"68,380 mi.","price":"$19,998","seller":"CarMax Arlington/Ft. Worth - Offering Express Pickup and Home Delivery"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2014 Audi A6 2.0T Premium quattro","mileage":"127,559 mi.","price":"$9,977","seller":"Porsche Pittsburgh"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2013 Audi A6 3.0T Prestige","mileage":"112,000 mi.","price":"$13,900","seller":"Austinite Auto Sales"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2017 Audi A6 2.0T Premium","mileage":"94,598 mi.","price":"$17,977","seller":"Integrity Auto Group"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2015 Audi A6 2.0T Premium","mileage":"81,257 mi.","price":"$13,999","seller":"Queen Motor Cars"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2012 Audi A6 3.0 Premium quattro","mileage":"91,283 mi.","price":"$10,990","seller":"Austra Motors"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2011 Audi A6 3.0 Premium quattro","mileage":"84,000 mi.","price":"$9,800","seller":"Omar"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2015 Audi A6 2.0T Premium Plus","mileage":"77,464 mi.","price":"$14,495","seller":"Silicon Valley Enthusiast"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2017 Audi A6 2.0T Premium quattro","mileage":"122,811 mi.","price":"$17,700","seller":"iDeal Auto Imports"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2017 Audi A6 2.0T Premium quattro","mileage":"93,852 mi.","price":"$18,400","seller":"iDeal Auto Imports"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2013 Audi A6 3.0T Premium Plus quattro","mileage":"85,501 mi.","price":"$17,995","seller":"Lee\u0027s Riverside Auto"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2014 Audi A6 2.0T Premium quattro","mileage":"90,018 mi.","price":"$13,995","seller":"Burns Auto Mart LLC"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2013 Audi A6 2.0T Premium Plus","mileage":"85,658 mi.","price":"$12,800","seller":"SVG Motors Beavercreek"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2009 Audi A6 3.0 Premium quattro","mileage":"175,000 mi.","price":"$6,500","seller":"Platinum Automotive LLC"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2013 Audi A6 2.0T Premium","mileage":"138,874 mi.","price":"$9,365","seller":"thomas"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2012 Audi A6 3.0 Premium quattro","mileage":"91,187 mi.","price":"$12,795","seller":"Right Away Auto Sales"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2015 Audi A6 3.0T Premium Plus","mileage":"102,678 mi.","price":"$15,750","seller":"CARFACE AUTO GROUP"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2014 Audi A6 2.0T Premium Plus quattro","mileage":"87,219 mi.","price":"$12,550","seller":"CARFACE AUTO GROUP"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2015 Audi A6 2.0T Premium Plus","mileage":"115,122 mi.","price":"$12,995","seller":"Logic Auto Sales"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 2.0T Premium","mileage":"83,000 mi.","price":"$20,000","seller":"Isabella"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2007 Audi A6 3.2 Avant quattro","mileage":"131,040 mi.","price":"$6,950","seller":"Austinite Auto Sales"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2015 Audi A6 2.0T Premium Plus","mileage":"78,066 mi.","price":"$13,980","seller":"AutoDot"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 2.0T Premium Plus","mileage":"120,050 mi.","price":"$14,800","seller":"Car City"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2015 Audi A6 2.0T Premium Plus","mileage":"84,591 mi.","price":"$16,825","seller":"East Carolina Auto Exchange"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2015 Audi A6 2.0T Premium","mileage":"88,085 mi.","price":"$12,999","seller":"Auto Spot of Mountain Lakes"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2015 Audi A6 2.0T Premium Plus","mileage":"92,438 mi.","price":"$15,900","seller":"Executive Auto Sales"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2015 Audi A6 2.0T Premium Plus","mileage":"71,200 mi.","price":"$16,650","seller":"Eric"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2018 Audi A6 2.0T Premium Plus","mileage":"96,247 mi.","price":"$19,899","seller":"Boktor Motors"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 3.0T Premium Plus","mileage":"49,107 mi.","price":"$19,500","seller":"Metro Auto Sales"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2012 Audi A6 2.0T Premium Plus","mileage":"105,697 mi.","price":"$11,588","seller":"Nissan of McKinney"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 3.0T Prestige","mileage":"95,142 mi.","price":"$16,871","seller":"Schomp Nissan"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2014 Audi A6 2.0T Premium","mileage":"127,050 mi.","price":"$13,950","seller":"Andy"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2017 Audi A6 2.0T Premium","mileage":"87,700 mi.","price":"$17,500","seller":"David"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2013 Audi A6 2.0T Premium Plus quattro","mileage":"134,627 mi.","price":"$12,397","seller":"Dallas Drive"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2017 Audi A6 2.0T Premium","mileage":"135,426 mi.","price":"$11,995","seller":"DFW Auto and Services LLC"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2013 Audi A6 3.0T Premium quattro","mileage":"139,181 mi.","price":"$11,395","seller":"ATT Motors"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 3.0T Premium Plus","mileage":"86,766 mi.","price":"$18,995","seller":"DFW Auto and Services LLC"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 3.0T Premium Plus","mileage":"141,185 mi.","price":"$14,985","seller":"Gravity Autos Sandy Springs"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2013 Audi A6 2.0T Premium Plus","mileage":"109,856 mi.","price":"$11,995","seller":"AutoNation USA Austin"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2012 Audi A6 3.0 Premium quattro","mileage":"117,789 mi.","price":"$11,900","seller":"Austinite Auto Sales"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 2.0T Premium","mileage":"86,755 mi.","price":"$19,998","seller":"CarMax Augusta - Offering Express Pickup and Home Delivery"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2013 Audi A6 2.0T Premium Plus quattro","mileage":"86,400 mi.","price":"$10,995","seller":"NOVA Autoland LLC"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2014 Audi A6 2.0T Premium Plus quattro","mileage":"98,324 mi.","price":"$11,900","seller":"Stop and Drive Auto Sales"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2015 Audi A6 2.0T Premium quattro","mileage":"83,791 mi.","price":"$18,998","seller":"CarMax Tampa - Offering Express Pickup and Home Delivery"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2013 Audi A6 2.0T Premium Plus quattro","mileage":"115,952 mi.","price":"$10,990","seller":"Elite Auto Sales"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2014 Audi A6 3.0T Prestige quattro","mileage":"67,217 mi.","price":"$19,998","seller":"CarMax Buena Park - Offering Express Pickup and Home Delivery"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 2.0T Premium","mileage":"109,212 mi.","price":"$12,995","seller":"Royal Cars Inc."}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 2.0T Premium quattro","mileage":"79,144 mi.","price":"$16,500","seller":"Wholesale Investments inc"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2003 Audi A6 4.2 quattro","mileage":"64,962 mi.","price":"$11,788","seller":"iCars Chicago"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2005 Audi A6 quattro","mileage":"158,680 mi.","price":"$4,499","seller":"Your Choice Auto Sales of Posen"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2017 Audi A6 2.0T Premium","mileage":"46,992 mi.","price":"$16,990","seller":"DAMS AUTO LLC"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 2.0T Premium Plus","mileage":"121,321 mi.","price":"$17,900","seller":"Driven Pre-Owned"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2015 Audi A6 2.0T Premium","mileage":"80,403 mi.","price":"$15,998","seller":"All City Auto Sales"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2014 Audi A6 3.0T Premium Plus","mileage":"81,637 mi.","price":"$15,995","seller":"Auto Trademark"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 2.0T Premium Plus","mileage":"98,236 mi.","price":"$17,995","seller":"Virginia Auto Trader Co."}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 3.0T Premium Plus","mileage":"99,804 mi.","price":"$19,495","seller":"Giant Auto Sales"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 2.0T Premium Plus","mileage":"64,901 mi.","price":"$18,987","seller":"Morgan Automotive Inc."}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2015 Audi A6 3.0T Premium Plus","mileage":"138,534 mi.","price":"$11,987","seller":"Speedway Motors LLC"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2015 Audi A6 3.0T Premium Plus","mileage":"80,300 mi.","price":"$16,495","seller":"A Better Way Wholesale"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 2.0T Premium Plus","mileage":"81,900 mi.","price":"$15,995","seller":"A Better Way Wholesale"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2013 Audi A6 2.0T Premium Plus quattro","mileage":"61,767 mi.","price":"$17,998","seller":"CarMax Clermont - Offering Express Pickup and Home Delivery"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2013 Audi A6 3.0T Premium Plus quattro","mileage":"130,161 mi.","price":"$13,999","seller":"Auto Express"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2013 Audi A6 2.0T Premium Plus quattro","mileage":"62,960 mi.","price":"$18,998","seller":"CarMax Orlando - Offering Express Pickup and Home Delivery"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2017 Audi A6 2.0T Premium Plus","mileage":"98,187 mi.","price":"$18,499","seller":"Advanced Auto Sales"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2012 Audi A6 2.0T Premium Plus","mileage":"124,000 mi.","price":"$11,495","seller":"WS Auto Sales"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2015 Audi A6 2.0T Premium","mileage":"84,700 mi.","price":"$16,450","seller":"Sivan"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2012 Audi A6 3.0T Prestige quattro","mileage":"86,178 mi.","price":"$18,000","seller":"iDrive Autohaus Ltd."}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2013 Audi A6 2.0T Premium Plus quattro","mileage":"87,009 mi.","price":"$14,382","seller":"Apexcars.net"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2012 Audi A6 3.0T Premium quattro","mileage":"95,230 mi.","price":"$15,900","seller":"616 Motors"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2009 Audi A6 3.0 Premium Plus quattro","mileage":"87,111 mi.","price":"$11,973","seller":"Colorado Auto Finders"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2017 Audi A6 2.0T Premium quattro","mileage":"85,074 mi.","price":"$16,399","seller":"North Coast Mitsubishi Bedford"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2013 Audi A6 2.0T Premium Plus quattro","mileage":"74,093 mi.","price":"$18,998","seller":"CarMax Gaithersburg - Offering Express Pickup and Home Delivery"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 3.0T Premium Plus","mileage":"80,075 mi.","price":"$18,500","seller":"IM Autohaus"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 2.0T Premium quattro","mileage":"109,195 mi.","price":"$15,995","seller":"Giant Auto Sales"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2017 Audi A6 3.0T Premium Plus","mileage":"99,890 mi.","price":"$17,995","seller":"John L. Smith, Inc."}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 2.0T Premium Plus","mileage":"64,180 mi.","price":"$18,995","seller":"Elite Auto House"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2018 Audi A6 2.0T Premium Plus","mileage":"137,726 mi.","price":"$12,900","seller":"GTA Motors"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2014 Audi A6 2.0T Premium Plus quattro","mileage":"76,250 mi.","price":"$13,999","seller":"Primary Motors"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2015 Audi A6 2.0T Premium Plus","mileage":"82,226 mi.","price":"$15,995","seller":"J \u0026 M Automotive"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2014 Audi A6 3.0T Prestige quattro","mileage":"96,500 mi.","price":"$14,995","seller":"A Better Way Wholesale"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2013 Audi A6 3.0T Premium Plus quattro","mileage":"61,400 mi.","price":"$13,995","seller":"A Better Way Wholesale"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2011 Audi A6 3.0 Premium Plus quattro","mileage":"108,787 mi.","price":"$9,999","seller":"Green Light Auto Sales"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 2.0T Premium quattro","mileage":"76,189 mi.","price":"$18,980","seller":"Good Guys Auto House"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 3.0T Premium Plus","mileage":"82,904 mi.","price":"$17,933","seller":"Blasius of Middletown"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2011 Audi A6 3.0 Premium quattro","mileage":"117,250 mi.","price":"$11,800","seller":"wal"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 2.0T Premium","mileage":"111,537 mi.","price":"$16,999","seller":"Auto Express"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2013 Audi A6 2.0T Premium","mileage":"104,000 mi.","price":"$8,900","seller":"Isabel"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 3.0T Premium Plus","mileage":"113,745 mi.","price":"$13,900","seller":"Premium Autos"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2013 Audi A6 3.0T Prestige quattro","mileage":"134,541 mi.","price":"$12,121","seller":"Lakeside Automotive Group"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2013 Audi A6 3.0T Premium Plus quattro","mileage":"154,384 mi.","price":"$10,785","seller":"Icon Auto Group LLC"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2015 Audi A6 3.0T Prestige","mileage":"100,051 mi.","price":"$15,575","seller":"Mercedes-Benz of Loveland"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2013 Audi A6 3.0T Premium Plus quattro","mileage":"93,881 mi.","price":"$16,990","seller":"Colorado Auto Finders"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 2.0T Premium Plus","mileage":"84,843 mi.","price":"$16,250","seller":"Mercedes-Benz of Tuscaloosa"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2011 Audi A6 3.0 Premium quattro","mileage":"146,000 mi.","price":"$6,995","seller":"Jr"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2014 Audi A6 2.0T Premium Plus quattro","mileage":"34,577 mi.","price":"$17,990","seller":"Selden Motors"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 2.0T Premium Plus","mileage":"90,639 mi.","price":"$15,495","seller":"J\u0026S Autohaus III"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 3.0T Prestige","mileage":"111,764 mi.","price":"$17,799","seller":"Advanced Auto Sales"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2015 Audi A6 2.0T Premium Plus","mileage":"94,328 mi.","price":"$12,999","seller":"Best Price Car Dealer"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2014 Audi A6 2.0T Premium Plus","mileage":"68,388 mi.","price":"$15,495","seller":"Unique Auto Center"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2013 Audi A6 2.0T Premium","mileage":"189,755 mi.","price":"$9,000","seller":"Q"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2017 Audi A6 2.0T Premium","mileage":"85,886 mi.","price":"$14,999","seller":"Golden Auto Group, Inc"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2017 Audi A6 2.0T Premium","mileage":"88,652 mi.","price":"$16,999","seller":"Golden Auto Group, Inc"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2014 Audi A6 2.0T Premium","mileage":"106,000 mi.","price":"$10,950","seller":"7 Auto Group"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2014 Audi A6 3.0T Premium Plus quattro","mileage":"51,388 mi.","price":"$16,888","seller":"Nash Auto"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2017 Audi A6 2.0T Premium","mileage":"87,433 mi.","price":"$15,477","seller":"Karplus Warehouse Inc."}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2017 Audi A6 2.0T Premium","mileage":"71,381 mi.","price":"$15,975","seller":"Karplus Warehouse Inc."}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 2.0T Premium Plus","mileage":"61,850 mi.","price":"$19,800","seller":"California Auto Sales"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2012 Audi A6 2.0T Premium","mileage":"124,114 mi.","price":"$10,999","seller":"BabaCars"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 2.0T Premium Plus","mileage":"63,526 mi.","price":"$19,354","seller":"Van Horn Honda of Glendale"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 3.0T Premium Plus","mileage":"91,977 mi.","price":"$17,942","seller":"Lakeside Automotive Group"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2015 Audi A6 2.0T Premium Plus","mileage":"89,480 mi.","price":"$18,490","seller":"Colorado Auto Finders"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 2.0T Premium quattro","mileage":"90,100 mi.","price":"$17,950","seller":"Custom Cars West"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2013 Audi A6 3.0T Premium Plus quattro","mileage":"74,214 mi.","price":"$16,897","seller":"Springs Automotive Group"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2015 Audi A6 2.0T Premium","mileage":"96,087 mi.","price":"$17,995","seller":"Dixie Motors Inc"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2013 Audi A6 3.0T Prestige quattro","mileage":"81,169 mi.","price":"$15,995","seller":"Steve White Volkswagen Audi - Greenville"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2013 Audi A6 2.0T Premium Plus quattro","mileage":"81,198 mi.","price":"$17,998","seller":"CarMax Dulles - Offering Express Pickup and Home Delivery"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2014 Audi A6 2.0T Premium","mileage":"95,300 mi.","price":"$12,250","seller":"Fast Turn - Manassas"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2014 Audi A6 2.0T Premium Plus quattro","mileage":"145,303 mi.","price":"$7,995","seller":"Mega Auto Outlet"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2011 Audi A6 3.0 Premium quattro","mileage":"98,962 mi.","price":"$11,495","seller":"JDM Auto"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2013 Audi A6 3.0T Premium quattro","mileage":"110,137 mi.","price":"$11,895","seller":"WBM of Arlington"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2014 Audi A6 3.0T Prestige quattro","mileage":"100,968 mi.","price":"$16,995","seller":"Hyman Bros. Infiniti of Richmond"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2012 Audi A6 3.0 Premium quattro","mileage":"159,575 mi.","price":"$6,999","seller":"NEMRI AUTO SALES LLC"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2002 Audi A6 3.0 quattro","mileage":"105,000 mi.","price":"$4,488","seller":"Pinellas Auto Brokers"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2017 Audi A6 2.0T Premium quattro","mileage":"112,094 mi.","price":"$15,998","seller":"AutoNation Chrysler Dodge Jeep Ram and FIAT North Phoenix"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2014 Audi A6 2.0T Premium Plus quattro","mileage":"81,811 mi.","price":"$12,795","seller":"Lexus of Palm Beach"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2015 Audi A6 3.0T Premium Plus","mileage":"79,236 mi.","price":"$18,998","seller":"CarMax Oceanside - Offering Express Pickup and Home Delivery"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2014 Audi A6 2.0T Premium Plus quattro","mileage":"101,275 mi.","price":"$12,995","seller":"Grand Motors"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2011 Audi A6 3.0 Premium quattro","mileage":"74,402 mi.","price":"$12,995","seller":"Success Auto Sales"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2012 Audi A6 3.0T Premium quattro","mileage":"80,021 mi.","price":"$14,900","seller":"616 Motors"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2018 Audi A6 2.0T Premium quattro","mileage":"91,324 mi.","price":"$18,990","seller":"Audi Little Rock"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 2.0T Premium Plus","mileage":"92,428 mi.","price":"$16,795","seller":"Next Step Auto Sales LLC"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 3.0T Premium Plus","mileage":"108,469 mi.","price":"$18,595","seller":"Susan Schein Automotive"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 2.0T Premium Plus","mileage":"99,485 mi.","price":"$13,995","seller":"Unlimited Auto Group of Marietta"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 2.0T Premium quattro","mileage":"87,432 mi.","price":"$16,595","seller":"Action Auto Sales and Finance Inc."}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2012 Audi A6 3.0T Premium Plus quattro","mileage":"190,923 mi.","price":"$6,547","seller":"Tri-County Lexus"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2014 Audi A6 3.0T Prestige quattro","mileage":"132,188 mi.","price":"$13,777","seller":"Auto Trade Corp"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 3.0T Premium Plus","mileage":"75,874 mi.","price":"$19,781","seller":"Lexus of Tampa Bay"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2012 Audi A6 3.0T Premium quattro","mileage":"104,900 mi.","price":"$12,377","seller":"King\u0027s Auto Group"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 3.0T Prestige","mileage":"71,915 mi.","price":"$18,990","seller":"Kuhn Volkswagen"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 2.0T Premium","mileage":"85,377 mi.","price":"$16,999","seller":"Auto Express"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2012 Audi A6 3.0T Premium quattro","mileage":"124,353 mi.","price":"$12,999","seller":"Auto Express"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2015 Audi A6 2.0T Premium","mileage":"100,813 mi.","price":"$13,950","seller":"Cave Creek Jabers Auto Sales"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 3.0T Premium Plus","mileage":"130,198 mi.","price":"$14,571","seller":"Camelback Kia"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2007 Audi A6 3.2 quattro","mileage":"86,000 mi.","price":"$8,800","seller":"New Deal Pre-Owned Auto"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2013 Audi A6 3.0T Prestige quattro","mileage":"89,950 mi.","price":"$12,998","seller":"Sarasota Toyota"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 2.0T Premium Plus","mileage":"75,835 mi.","price":"$17,699","seller":"Mercedes-Benz of Sarasota"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2008 Audi A6 3.2","mileage":"127,000 mi.","price":"$6,495","seller":"WS Auto Sales"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2013 Audi A6 3.0T Prestige quattro","mileage":"87,091 mi.","price":"$18,577","seller":"Legend Auto Sales"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2014 Audi A6 2.0T Premium quattro","mileage":"138,314 mi.","price":"$11,995","seller":"Original Owner Autos"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2013 Audi A6 3.0T Premium Plus quattro","mileage":"134,506 mi.","price":"$8,999","seller":"Indy Auto Center"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2015 Audi A6 2.0T Premium","mileage":"103,844 mi.","price":"$13,495","seller":"Auto Union Inc. of Lebanon"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2013 Audi A6 3.0T Premium Plus quattro","mileage":"127,528 mi.","price":"$11,900","seller":"Schomp Nissan"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2015 Audi A6 2.0T Premium Plus","mileage":"85,599 mi.","price":"$14,995","seller":"New Line Motors, Inc"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2012 Audi A6 3.0T Premium Plus quattro","mileage":"85,229 mi.","price":"$13,000","seller":"Hickory Used Car Superstore"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2017 Audi A6 2.0T Premium quattro","mileage":"107,730 mi.","price":"$15,995","seller":"Geneva Foreign \u0026 Sports"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2012 Audi A6 3.0T Premium Plus quattro","mileage":"101,664 mi.","price":"$13,999","seller":"Perfect Auto"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2015 Audi A6 2.0T Premium quattro","mileage":"107,375 mi.","price":"$13,481","seller":"MemberCar"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2008 Audi A6 4.2 quattro","mileage":"144,082 mi.","price":"$11,687","seller":"City Wide Auto and Truck Sales"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2015 Audi A6 2.0T Premium Plus","mileage":"90,498 mi.","price":"$14,985","seller":"Trimax Auto Group"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2015 Audi A6 2.0T Premium Plus","mileage":"120,893 mi.","price":"$10,250","seller":"Magic Auto Sales"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2004 Audi A6 3.0L","mileage":"109,000 mi.","price":"$8,950","seller":"Beau\u0027s Auto Sales"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2013 Audi A6 2.0T Premium Plus quattro","mileage":"124,041 mi.","price":"$11,888","seller":"Prime Wheels LLC"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2017 Audi A6 2.0T Premium Plus","mileage":"70,777 mi.","price":"$19,900","seller":"St Pete Mitsubishi"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 3.0T Premium Plus","mileage":"142,000 mi.","price":"$13,900","seller":"Desert Auto Dealer"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2013 Audi A6 2.0T Premium Plus quattro","mileage":"56,595 mi.","price":"$18,998","seller":"CarMax Escondido - Offering Express Pickup and Home Delivery"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2013 Audi A6 2.0T Premium Plus","mileage":"103,964 mi.","price":"$13,600","seller":"New PBB Auto Inc"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2013 Audi A6 3.0T Premium Plus quattro","mileage":"92,024 mi.","price":"$17,998","seller":"CarMax Kearny Mesa - Offering Express Pickup and Home Delivery"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2015 Audi A6 3.0T Premium Plus","mileage":"96,500 mi.","price":"$13,400","seller":"Travis"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2013 Audi A6 3.0T Premium quattro","mileage":"94,192 mi.","price":"$16,995","seller":"E\u0026A Motors"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2014 Audi A6 2.0T Premium Plus quattro","mileage":"80,618 mi.","price":"$19,998","seller":"CarMax Kansas City - Offering Express Pickup and Home Delivery"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2014 Audi A6 3.0T Premium Plus","mileage":"104,604 mi.","price":"$12,999","seller":"Your Choice Auto Sales of Elgin"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 2.0T Premium","mileage":"126,423 mi.","price":"$11,695","seller":"Sapphire Motors"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2015 Audi A6 3.0T Prestige","mileage":"131,650 mi.","price":"$15,900","seller":"BMW Of Tulsa"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 3.0T Prestige","mileage":"112,462 mi.","price":"$16,488","seller":"Grand Valley Auto Sales - Lakewood"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2013 Audi A6 3.0T Premium Plus quattro","mileage":"78,124 mi.","price":"$16,395","seller":"Imd Motors Richardson"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 2.0T Premium Plus","mileage":"95,000 mi.","price":"$16,995","seller":"White Horse Automotive"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2015 Audi A6 3.0T Premium Plus","mileage":"111,258 mi.","price":"$17,980","seller":"Bob Johnson Mazda"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2015 Audi A6 2.0T Premium","mileage":"95,259 mi.","price":"$15,445","seller":"AutoMember"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2015 Audi A6 3.0T Premium Plus","mileage":"108,214 mi.","price":"$15,895","seller":"National Auto of Waldorf"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2014 Audi A6 2.0T Premium Plus quattro","mileage":"54,842 mi.","price":"$13,995","seller":"Hamilton Honda"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2015 Audi A6 2.0T Premium quattro","mileage":"80,762 mi.","price":"$18,998","seller":"CarMax Jacksonville West - Offering Express Pickup and Home Delivery"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2013 Audi A6 2.0T Premium Plus quattro","mileage":"101,682 mi.","price":"$9,772","seller":"5 Star Auto Sales of East Meadow"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2015 Audi A6 2.0T Premium Plus","mileage":"86,659 mi.","price":"$15,995","seller":"J \u0026 M Automotive"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2017 Audi A6 2.0T Premium","mileage":"64,721 mi.","price":"$18,990","seller":"Paramount Auto Sales"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2014 Audi A6 2.0T Premium Plus quattro","mileage":"89,430 mi.","price":"$12,995","seller":"Real Motors Inc"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2003 Audi A6 4.2 quattro","mileage":"133,882 mi.","price":"$5,995","seller":"Boise Auto Arena LLC"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 2.0T Premium Plus","mileage":"80,819 mi.","price":"$15,990","seller":"Autohighway, Inc"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2014 Audi A6 3.0 TDI Premium Plus quattro","mileage":"85,391 mi.","price":"$14,490","seller":"Audi Bellevue"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2013 Audi A6 3.0T Prestige quattro","mileage":"92,167 mi.","price":"$12,899","seller":"Zeigler Chevrolet"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 3.0T Premium Plus","mileage":"115,028 mi.","price":"$16,550","seller":"Village Auto Inc."}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2011 Audi A6 3.0 Premium quattro","mileage":"133,139 mi.","price":"$8,950","seller":"United Sports \u0026 Autos"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2014 Audi A6 2.0T Premium Plus quattro","mileage":"130,326 mi.","price":"$9,997","seller":"PHD AUTO GROUP"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2015 Audi A6 2.0T Premium","mileage":"83,762 mi.","price":"$17,698","seller":"Classic Chevrolet Beaumont"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2001 Audi A6 2.8 quattro","mileage":"163,302 mi.","price":"$2,295","seller":"East Coast Auto Source"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 3.0T Premium Plus","mileage":"95,823 mi.","price":"$18,900","seller":"McAdenville Motors"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 2.0T Premium Plus","mileage":"74,886 mi.","price":"$18,385","seller":"Mercedes-Benz of Houston Greenway"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2013 Audi A6 2.0T Premium Plus","mileage":"40,887 mi.","price":"$14,900","seller":"Auto Boutique Texas"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 2.0T Premium Plus","mileage":"39,711 mi.","price":"$19,500","seller":"Koons Kia"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 3.0T Premium Plus","mileage":"87,488 mi.","price":"$18,741","seller":"BMW of Towson"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2012 Audi A6 3.0 Premium quattro","mileage":"147,000 mi.","price":"$13,499","seller":"Xoticars"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2018 Audi A6 2.0T Premium","mileage":"62,300 mi.","price":"$19,999","seller":"Antonio"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2014 Audi A6 3.0T Prestige quattro","mileage":"187,434 mi.","price":"$8,499","seller":"South Street Auto Sales LLC"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2015 Audi A6 3.0T Premium Plus","mileage":"151,013 mi.","price":"$14,990","seller":"Ford of Branford US 1"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2017 Audi A6 2.0T Premium","mileage":"112,714 mi.","price":"$16,987","seller":"S \u0026 D West Bridgewater"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 2.0T Premium Plus","mileage":"87,583 mi.","price":"$16,990","seller":"Audi Las Vegas"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2007 Audi A6 3.2 quattro","mileage":"15,077 mi.","price":"$13,995","seller":"AlwaysSold123"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2014 Audi A6 2.0T Premium Plus quattro","mileage":"22,380 mi.","price":"$19,495","seller":"AutoNation Toyota Buena Park"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2009 Audi A6 3.2 Premium","mileage":"211,000 mi.","price":"$5,798","seller":"Ted"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2013 Audi A6 3.0T Prestige quattro","mileage":"116,115 mi.","price":"$14,985","seller":"Xchange Motors"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2018 Audi A6 2.0T Premium Plus","mileage":"77,133 mi.","price":"$19,920","seller":"Gregory Mitsubishi"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2013 Audi A6 3.0T Premium Plus quattro","mileage":"154,754 mi.","price":"$9,800","seller":"616 Motors"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 2.0T Premium Plus","mileage":"90,106 mi.","price":"$17,984","seller":"Louisville INFINITI"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2012 Audi A6 3.0 Premium quattro","mileage":"128,698 mi.","price":"$11,983","seller":"Carvila Auto Sales"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 2.0T Premium Plus","mileage":"83,524 mi.","price":"$15,515","seller":"Prestige Auto Mall"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2005 Audi A6 3.2 quattro","mileage":"63,700 mi.","price":"$7,965","seller":"Certified Car Center, Inc"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2012 Audi A6 2.0T Premium Plus","mileage":"76,205 mi.","price":"$14,995","seller":"Car Loft"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 2.0T Premium Plus","mileage":"73,000 mi.","price":"$18,495","seller":"MM Enterprises"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2014 Audi A6 3.0 TDI Premium Plus","mileage":"99,564 mi.","price":"$17,499","seller":"Car Trade"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2015 Audi A6 2.0T Premium","mileage":"99,516 mi.","price":"$14,500","seller":"International Auto"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2015 Audi A6 2.0T Premium Plus","mileage":"59,446 mi.","price":"$18,499","seller":"Arrow Motors"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2008 Audi A6 3.2 quattro","mileage":"157,474 mi.","price":"$5,995","seller":"NJ Auto Pros"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2018 Audi A6 2.0T Premium","mileage":"77,875 mi.","price":"$19,774","seller":"Evo Motors"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 3.0 TDI Premium Plus","mileage":"74,450 mi.","price":"$19,999","seller":"Vista Motors"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2013 Audi A6 3.0T Premium Plus quattro","mileage":"81,762 mi.","price":"$13,885","seller":"Regency USA Inc"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2015 Audi A6 3.0L TDI Prestige","mileage":"134,000 mi.","price":"$16,900","seller":"Reliant Motors"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2014 Audi A6 3.0T Prestige quattro","mileage":"121,587 mi.","price":"$14,999","seller":"BMW Seattle"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2013 Audi A6 2.0T Premium Plus quattro","mileage":"150,571 mi.","price":"$9,995","seller":"M\u0026M Auto Sales LLC"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2005 Audi A6 3.2 quattro","mileage":"158,805 mi.","price":"$4,998","seller":"Auto World"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2012 Audi A6 3.0T Premium quattro","mileage":"108,543 mi.","price":"$12,192","seller":"Smart Toyota"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2010 Audi A6 3.0T Premium Plus","mileage":"122,396 mi.","price":"$7,799","seller":"My Choice Motors of Elmhurst"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2010 Audi A6 3.0 Premium quattro","mileage":"167,029 mi.","price":"$7,490","seller":"Coda Motors"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2012 Audi A6 3.0T Premium quattro","mileage":"124,670 mi.","price":"$14,800","seller":"616 Motors"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2017 Audi A6 3.0T Premium Plus","mileage":"124,454 mi.","price":"$17,900","seller":"Carmel Motors"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2018 Audi A6 2.0T Premium Plus","mileage":"96,720 mi.","price":"$19,990","seller":"McLarty Volvo Cars of Little Rock"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2012 Audi A6 3.0T Premium Plus quattro","mileage":"94,611 mi.","price":"$12,000","seller":"Tom Gray Auto Sales"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2012 Audi A6 2.0T Premium Plus","mileage":"115,842 mi.","price":"$9,992","seller":"Honda Cars of Rockwall"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2018 Audi A6 2.0T Sport","mileage":"101,614 mi.","price":"$17,399","seller":"EchoPark Automotive Dallas"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2008 Audi A6 3.2 quattro","mileage":"220,000 mi.","price":"$6,950","seller":"Frank"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 2.0T Premium Plus","mileage":"104,010 mi.","price":"$17,495","seller":"Ridgeview Motors, Inc."}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 3.0T Premium Plus","mileage":"66,626 mi.","price":"$18,000","seller":"Auto Boutique Texas"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2014 Audi A6 2.0T Premium quattro","mileage":"75,197 mi.","price":"$13,450","seller":"Precise Automotive Group"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 3.0T Premium Plus","mileage":"111,123 mi.","price":"$18,500","seller":"Raleigh Pre-Owned"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2014 Audi A6 3.0T Prestige quattro","mileage":"113,934 mi.","price":"$12,900","seller":"Rolls Auto Sales"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2015 Audi A6 3.0T Premium Plus","mileage":"118,408 mi.","price":"$12,900","seller":"CG Luxury Autos"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2000 Audi A6 Avant","mileage":"105,477 mi.","price":"$4,900","seller":"Auto Mall"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2015 Audi A6 3.0T Premium Plus","mileage":"119,758 mi.","price":"$16,300","seller":"Bertera Chevrolet"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2014 Audi A6 3.0 TDI Premium Plus quattro","mileage":"99,029 mi.","price":"$17,900","seller":"German Auto AZ"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2015 Audi A6 3.0T Premium Plus","mileage":"111,447 mi.","price":"$14,975","seller":"Imotobank"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 2.0T Premium","mileage":"53,457 mi.","price":"$17,950","seller":"TJK AUTO LLC"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2014 Audi A6 3.0T Prestige quattro","mileage":"122,321 mi.","price":"$12,950","seller":"QCAutoplex.com"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2015 Audi A6 2.0T Premium Plus","mileage":"58,718 mi.","price":"$19,991","seller":"Hendrick Toyota Merriam"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2013 Audi A6 3.0T Premium Plus quattro","mileage":"81,699 mi.","price":"$15,490","seller":"BMW of Columbia"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 3.0T Premium Plus","mileage":"102,793 mi.","price":"$16,000","seller":"CarWise Peoria"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2013 Audi A6 3.0T Premium Plus quattro","mileage":"62,523 mi.","price":"$14,572","seller":"RAVMOTORS"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2014 Audi A6 2.0T Premium Plus","mileage":"145,000 mi.","price":"$5,995","seller":"Frieling Auto Sales"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2014 Audi A6 3.0T Premium Plus quattro","mileage":"117,024 mi.","price":"$13,950","seller":"Audi Richfield"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2014 Audi A6 2.0T Premium Plus quattro","mileage":"57,119 mi.","price":"$14,650","seller":"Direct Auto Sales"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2015 Audi A6 2.0T Premium Plus","mileage":"110,776 mi.","price":"$11,999","seller":"Cornerstone Ford Chrysler"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2014 Audi A6 3.0T Prestige","mileage":"95,851 mi.","price":"$18,000","seller":"Plaza Motor Company"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2013 Audi A6 2.0T Premium Plus quattro","mileage":"92,407 mi.","price":"$14,995","seller":"Luxury Car Outlet"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2014 Audi A6 2.0T Premium Plus quattro","mileage":"49,880 mi.","price":"$15,990","seller":"Kenosha Toyota"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2014 Audi A6 2.0T Premium Plus quattro","mileage":"41,927 mi.","price":"$14,991","seller":"Midway Autohaus"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2015 Audi A6 2.0T Premium quattro","mileage":"69,099 mi.","price":"$16,991","seller":"Midway Autohaus"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2012 Audi A6 3.0T Premium quattro","mileage":"56,617 mi.","price":"$15,053","seller":"Heiser Ford Lincoln"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2014 Audi A6 2.0T Premium Plus quattro","mileage":"69,232 mi.","price":"$13,935","seller":"Mercedes-Benz of Milwaukee North"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2014 Audi A6 3.0T Premium Plus quattro","mileage":"104,083 mi.","price":"$16,798","seller":"Car Store USA"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2009 Audi A6 3.2 Premium","mileage":"82,527 mi.","price":"$9,947","seller":"Orange Motor Mall"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2018 Audi A6 2.0T Premium","mileage":"97,350 mi.","price":"$16,499","seller":"City Auto Center Davis"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 3.0T Premium Plus","mileage":"101,095 mi.","price":"$17,999","seller":"Banter Automotive Group"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2014 Audi A6 3.0T Premium Plus quattro","mileage":"91,490 mi.","price":"$15,900","seller":"Best Buy Used Cars"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2014 Audi A6 3.0T Prestige quattro","mileage":"94,162 mi.","price":"$15,991","seller":"Audi Oklahoma City"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2014 Audi A6 2.0T Premium","mileage":"123,354 mi.","price":"$10,495","seller":"Go Auto of Oklahoma City"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2015 Audi A6 2.0T Premium Plus","mileage":"19,536 mi.","price":"$19,500","seller":"Hyundai of Louisville"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2014 Audi A6 2.0T Premium Plus quattro","mileage":"83,782 mi.","price":"$13,500","seller":"Preferred Autos LLC"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2015 Audi A6 3.0T Premium Plus","mileage":"83,022 mi.","price":"$16,864","seller":"Hyundai of Cool Springs"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2012 Audi A6 3.0T Prestige quattro","mileage":"199,732 mi.","price":"$6,900","seller":"Suburban Ford of Sterling Heights"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2014 Audi A6 2.0T Premium Plus","mileage":"106,625 mi.","price":"$11,883","seller":"Germain Toyota"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 3.0T Premium Plus","mileage":"90,587 mi.","price":"$15,911","seller":"Germain Toyota"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2004 Audi A6 Avant quattro","mileage":"156,568 mi.","price":"$3,998","seller":"Rocky Mountain Eurosport Parker"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 2.0T Premium quattro","mileage":"98,400 mi.","price":"$18,599","seller":"Rocky Mountain Eurosport Parker"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 2.0T Premium quattro","mileage":"92,648 mi.","price":"$17,798","seller":"Colorado Auto Finders"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"1999 Audi A6 quattro","mileage":"40,429 mi.","price":"$11,995","seller":"Georgis Auto Sales"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2010 Audi A6 3.0 Prestige quattro","mileage":"70,444 mi.","price":"$9,995","seller":"Georgis Auto Sales"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2011 Audi A6 3.0 Premium quattro","mileage":"107,363 mi.","price":"$12,487","seller":"The Sharpest Rides"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2001 Audi A6 2.7T quattro","mileage":"165,869 mi.","price":"$3,988","seller":"Econo Auto Sales Inc"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2001 Audi A6 2.7T quattro","mileage":"1 mi.","price":"$2,988","seller":"Econo Auto Sales Inc"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2018 Audi A6 2.0T Premium Plus","mileage":"91,126 mi.","price":"$17,900","seller":"Auto Merchants Inc."}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2011 Audi A6 4.2 Prestige quattro","mileage":"95,496 mi.","price":"$10,795","seller":"Nik"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2012 Audi A6 2.0T Premium Plus","mileage":"150,025 mi.","price":"$10,000","seller":"Hyundai of Jasper"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 2.0T Premium","mileage":"81,844 mi.","price":"$17,393","seller":"Lexus of Knoxville"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2006 Audi A6 3.2 quattro","mileage":"105,908 mi.","price":"$5,995","seller":"Auto Locators"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2013 Audi A6 3.0T Prestige quattro","mileage":"68,299 mi.","price":"$18,977","seller":"RMS Motors"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2011 Audi A6 3.0 Prestige quattro","mileage":"125,660 mi.","price":"$8,995","seller":"Cherokee Auto Sales"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2013 Audi A6 3.0T Premium Plus quattro","mileage":"58,407 mi.","price":"$17,495","seller":"Hennessy Lexus of Atlanta"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2018 Audi A6 2.0T Sport","mileage":"75,863 mi.","price":"$19,994","seller":"Modern Classic Motors"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2006 Audi A6 3.2 quattro","mileage":"186,648 mi.","price":"$3,395","seller":"East Coast Auto Source"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 2.0T Premium Plus","mileage":"17,668 mi.","price":"$17,999","seller":"America\u0027s Xtreme Auto"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 2.0T Premium Plus","mileage":"78,490 mi.","price":"$16,995","seller":"Gerald Jones VW/Audi"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2015 Audi A6 3.0T Premium Plus","mileage":"71,887 mi.","price":"$17,995","seller":"AutoMember"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2012 Audi A6 3.0T Premium Plus quattro","mileage":"142,739 mi.","price":"$11,000","seller":"Stohlman Subaru of Sterling"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2014 Audi A6 3.0T Prestige","mileage":"94,802 mi.","price":"$15,995","seller":"Auto Trademark"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2017 Audi A6 3.0T Prestige","mileage":"110,948 mi.","price":"$18,440","seller":"AutoDot"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 2.0T Premium Plus","mileage":"111,681 mi.","price":"$16,035","seller":"Richmond BMW Midlothian"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2004 Audi A6 2.7T quattro","mileage":"110,030 mi.","price":"$6,500","seller":"Valentine Motors"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 2.0T Premium","mileage":"92,761 mi.","price":"$14,500","seller":"Cardinal Auto Sales"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2015 Audi A6 2.0T Premium Plus","mileage":"88,340 mi.","price":"$14,999","seller":"Cardinal Auto Sales"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2017 Audi A6 2.0T Premium Plus","mileage":"78,215 mi.","price":"$18,990","seller":"LF Autos"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2010 Audi A6 3.0 Prestige quattro","mileage":"155,507 mi.","price":"$3,500","seller":"Gathers Imports Group LLC"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2011 Audi A6 3.0 Premium Plus quattro","mileage":"167,419 mi.","price":"$6,995","seller":"Park Avenue Autos"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2014 Audi A6 2.0T Premium quattro","mileage":"42,873 mi.","price":"$13,999","seller":"CarVision of Maple Shade"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2013 Audi A6 3.0T Prestige quattro","mileage":"110,490 mi.","price":"$13,995","seller":"A\u0026G Auto Sales"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2014 Audi A6 2.0T Premium Plus quattro","mileage":"138,519 mi.","price":"$9,999","seller":"BMW of Ramsey"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 2.0T Premium Plus","mileage":"90,270 mi.","price":"$11,397","seller":"Victory Mitsubishi"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 3.0T Premium Plus","mileage":"96,293 mi.","price":"$15,898","seller":"AmeriCarna Auto Sales"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 2.0T Premium Plus","mileage":"107,262 mi.","price":"$12,898","seller":"AmeriCarna Auto Sales"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 2.0T Premium Plus","mileage":"35,248 mi.","price":"$17,890","seller":"Certified Luxury Motors of Valley Stream"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2011 Audi A6 4.2 Prestige quattro","mileage":"196,463 mi.","price":"$6,900","seller":"Auto Mall"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2013 Audi A6 3.0T Premium Plus quattro","mileage":"97,751 mi.","price":"$12,990","seller":"Faris Auto Mall"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2014 Audi A6 3.0T Prestige","mileage":"90,000 mi.","price":"$16,500","seller":"Seth"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2015 Audi A6 2.0T Premium Plus","mileage":"95,944 mi.","price":"$14,672","seller":"Lexus of Tampa Bay"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2014 Audi A6 3.0 TDI Premium Plus quattro","mileage":"145,257 mi.","price":"$11,626","seller":"Bell Ford"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2015 Audi A6 2.0T Premium Plus","mileage":"58,599 mi.","price":"$17,990","seller":"JQ MotorSports"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2017 Audi A6 2.0T Premium Plus","mileage":"100,543 mi.","price":"$16,899","seller":"Autocenter Sales \u0026 Service"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2018 Audi A6 2.0T Sport","mileage":"69,524 mi.","price":"$19,991","seller":"Motorcars of Palm Beach"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2018 Audi A6 2.0T Premium","mileage":"97,000 mi.","price":"$17,995","seller":"Auto Retail Group"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2017 Audi A6 2.0T Premium","mileage":"66,003 mi.","price":"$19,795","seller":"Fontana Motors Direct"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2005 Audi A6 A6 WITH 4.2L ENGINE","mileage":"0 mi.","price":"$13,888","seller":"Dunlap Imports"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2014 Audi A6 3.0T Premium Plus","mileage":"110,099 mi.","price":"$11,599","seller":"Jamie"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2016 Audi A6 2.0T Premium quattro","mileage":"75,322 mi.","price":"$15,650","seller":"CAR LUX"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2010 Audi A6 3.0 Premium quattro","mileage":"165,000 mi.","price":"$7,500","seller":"Marco"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2007 Audi A6 3.2 quattro","mileage":"254,123 mi.","price":"$5,995","seller":"Carson Cars"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2014 Audi A6 2.0T Premium Plus quattro","mileage":"121,318 mi.","price":"$12,995","seller":"Audi Bellingham"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2008 Audi A6 3.2","mileage":"156,172 mi.","price":"$3,555","seller":"Ochi"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2014 Audi A6 3.0T Prestige quattro","mileage":"93,298 mi.","price":"$18,225","seller":"Volkswagen Marin"}</td>
+    <td></td>
+  </tr></table><h2>Get used vehicle data for 'Sonata'</h2><table>
+  <tr>
+    <th>StepType</th>
+    <th>Step Description</th>
+    <th>Step Result</th>
+  </tr><tr>
+    <td>Given </td>
+    <td>user is on the Cars Shopping page</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Info</td>
+    <td>Launched: https://www.cars.com/shopping/</td>
+    <td></td>
+  </tr><tr>
+    <td>And </td>
+    <td>user selects 'Certified' in Stock Type dropdown</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>And </td>
+    <td>user selects 'Hyundai' in Make dropdown</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>And </td>
+    <td>user selects 'Sonata' in Model dropdown</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>And </td>
+    <td>user selects '$30,000' in Price dropdown</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>And </td>
+    <td>user selects '250 miles' in Distance dropdown</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>And </td>
+    <td>user enters '50312' into ZIP input</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>When </td>
+    <td>user clicks Search button</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Then </td>
+    <td>Results page should be displayed with header 'Certified used Hyundai Sonata for sale'</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Info</td>
+    <td>Count of cars found: 54 matches</td>
+    <td></td>
+  </tr><tr>
+    <td>And </td>
+    <td>log details of each used vehicle found</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2021 Hyundai Sonata SEL Plus","mileage":"11,347 mi.","price":"$23,850","seller":"Sid Dillon Hyundai"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2021 Hyundai Sonata SEL","mileage":"40,611 mi.","price":"$22,199","seller":"Sid Dillon Hyundai"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2021 Hyundai Sonata SEL Plus","mileage":"28,775 mi.","price":"$23,993","seller":"Sid Dillon Hyundai"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2022 Hyundai Sonata SEL Plus","mileage":"5,041 mi.","price":"$29,988","seller":"Northtowne Volkswagen, Hyundai, Mazda"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2021 Hyundai Sonata SEL","mileage":"21,372 mi.","price":"$24,988","seller":"Northtowne Volkswagen, Hyundai, Mazda"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2022 Hyundai Sonata SEL","mileage":"40,190 mi.","price":"$24,988","seller":"Northtowne Volkswagen, Hyundai, Mazda"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2022 Hyundai Sonata SE","mileage":"23,061 mi.","price":"$23,988","seller":"Northtowne Volkswagen, Hyundai, Mazda"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2021 Hyundai Sonata SEL Plus","mileage":"31,704 mi.","price":"$23,269","seller":"Joe Machens Hyundai"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2021 Hyundai Sonata Limited","mileage":"35,789 mi.","price":"$27,995","seller":"Billion Auto - Hyundai"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2020 Hyundai Sonata SEL","mileage":"47,209 mi.","price":"$20,000","seller":"Luther Burnsville Hyundai"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2023 Hyundai Sonata SEL","mileage":"3,272 mi.","price":"$24,000","seller":"Luther Burnsville Hyundai"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2023 Hyundai Sonata SEL","mileage":"21,618 mi.","price":"$22,996","seller":"Hyundai of Jefferson City"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2023 Hyundai Sonata SEL Plus","mileage":"8,017 mi.","price":"$25,500","seller":"Luther Bloomington Hyundai"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2021 Hyundai Sonata Limited","mileage":"18,824 mi.","price":"$26,000","seller":"Luther Bloomington Hyundai"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2022 Hyundai Sonata SEL","mileage":"24,698 mi.","price":"$23,000","seller":"Luther Bloomington Hyundai"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2022 Hyundai Sonata Limited","mileage":"12,658 mi.","price":"$27,500","seller":"Luther Bloomington Hyundai"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2020 Hyundai Sonata SE","mileage":"11,408 mi.","price":"$19,834","seller":"Buerkle Hyundai"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2020 Hyundai Sonata SEL","mileage":"34,762 mi.","price":"$20,995","seller":"Buerkle Hyundai"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2019 Hyundai Sonata SEL","mileage":"32,084 mi.","price":"$18,471","seller":"Buerkle Hyundai"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2023 Hyundai Sonata SEL Plus","mileage":"8,286 mi.","price":"$25,998","seller":"Walser Hyundai"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2023 Hyundai Sonata SEL","mileage":"4,221 mi.","price":"$28,489","seller":"Stew Hansen Hyundai"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2018 Hyundai Sonata Limited 2.0T","mileage":"30,318 mi.","price":"$20,391","seller":"Woodhouse Hyundai of Omaha"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2020 Hyundai Sonata SEL Plus","mileage":"13,574 mi.","price":"$24,000","seller":"Green Family Hyundai"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2022 Hyundai Sonata Limited","mileage":"32,998 mi.","price":"$26,231","seller":"Green Family Hyundai"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2021 Hyundai Sonata Limited","mileage":"28,653 mi.","price":"$25,199","seller":"Green Family Hyundai"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2021 Hyundai Sonata SEL Plus","mileage":"23,554 mi.","price":"$23,000","seller":"Luther Burnsville Hyundai"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2020 Hyundai Sonata SEL Plus","mileage":"34,209 mi.","price":"$25,000","seller":"Luther Burnsville Hyundai"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2023 Hyundai Sonata SEL","mileage":"7,128 mi.","price":"$21,000","seller":"Luther Bloomington Hyundai"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2023 Hyundai Sonata SEL","mileage":"6,991 mi.","price":"$24,799","seller":"Morrie\u0027s 394 Hyundai"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2023 Hyundai Sonata SEL","mileage":"4,505 mi.","price":"$22,999","seller":"Morrie\u0027s 394 Hyundai"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2023 Hyundai Sonata SEL","mileage":"6,983 mi.","price":"$23,999","seller":"Morrie\u0027s 394 Hyundai"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2023 Hyundai Sonata SEL Plus","mileage":"6,707 mi.","price":"$24,999","seller":"Morrie\u0027s 394 Hyundai"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2023 Hyundai Sonata SEL","mileage":"6,405 mi.","price":"$22,999","seller":"Morrie\u0027s 394 Hyundai"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2023 Hyundai Sonata Limited","mileage":"7,115 mi.","price":"$27,999","seller":"Morrie\u0027s 394 Hyundai"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2023 Hyundai Sonata SEL","mileage":"6,998 mi.","price":"$25,999","seller":"Morrie\u0027s 394 Hyundai"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2023 Hyundai Sonata SEL","mileage":"5,559 mi.","price":"$23,999","seller":"Morrie\u0027s 394 Hyundai"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2020 Hyundai Sonata SEL Plus","mileage":"12,806 mi.","price":"$21,998","seller":"Walser Hyundai"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2023 Hyundai Sonata SEL","mileage":"6,580 mi.","price":"$25,699","seller":"Walser Hyundai"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2023 Hyundai Sonata SEL","mileage":"3,286 mi.","price":"$23,998","seller":"Walser Hyundai Coon Rapids"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2021 Hyundai Sonata Limited","mileage":"16,076 mi.","price":"$26,999","seller":"Walser Hyundai Coon Rapids"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2021 Hyundai Sonata SE","mileage":"19,820 mi.","price":"$19,777","seller":"Vern Eide Hyundai Sioux City"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2020 Hyundai Sonata SEL","mileage":"30,036 mi.","price":"$20,932","seller":"Vern Eide Hyundai Sioux City"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2022 Hyundai Sonata Limited","mileage":"14,519 mi.","price":"$25,998","seller":"Dahl Hyundai"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2020 Hyundai Sonata SEL","mileage":"69,472 mi.","price":"$21,000","seller":"Mike Miller Hyundai"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2020 Hyundai Sonata SEL Plus","mileage":"43,265 mi.","price":"$23,995","seller":"Mike Miller Hyundai"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2023 Hyundai Sonata SE","mileage":"4,250 mi.","price":"$23,000","seller":"Luther Burnsville Hyundai"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2021 Hyundai Sonata SE","mileage":"35,932 mi.","price":"$19,000","seller":"Luther Bloomington Hyundai"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2021 Hyundai Sonata SEL","mileage":"19,919 mi.","price":"$21,000","seller":"Luther Bloomington Hyundai"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2023 Hyundai Sonata SE","mileage":"0 mi.","price":"$21,000","seller":"Luther Bloomington Hyundai"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2023 Hyundai Sonata SE","mileage":"3,579 mi.","price":"$22,499","seller":"Morrie\u0027s 394 Hyundai"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2023 Hyundai Sonata Limited","mileage":"7,842 mi.","price":"$29,490","seller":"Zimbrick Hyundai West"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2021 Hyundai Sonata Limited","mileage":"22,133 mi.","price":"$25,490","seller":"Zimbrick Hyundai West"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2019 Hyundai Sonata SE","mileage":"43,782 mi.","price":"$16,490","seller":"Zimbrick Hyundai West"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2021 Hyundai Sonata SEL","mileage":"19,046 mi.","price":"$21,998","seller":"Walser Hyundai"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2022 Hyundai Sonata Limited","mileage":"5,058 mi.","price":"$27,500","seller":"Boucher Hyundai of Janesville"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2023 Hyundai Sonata SEL","mileage":"6,395 mi.","price":"$23,550","seller":"Preston Hyundai"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2022 Hyundai Sonata SEL","mileage":"20,623 mi.","price":"$22,250","seller":"Heritage Hyundai Towson"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2021 Hyundai Sonata SE","mileage":"22,389 mi.","price":"$19,900","seller":"Roseville Hyundai"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2021 Hyundai Sonata Limited","mileage":"43,194 mi.","price":"$27,899","seller":"All Star Hyundai"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2021 Hyundai Sonata Limited","mileage":"62,854 mi.","price":"$21,391","seller":"Gettel Hyundai of Sarasota"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2020 Hyundai Sonata SEL Plus","mileage":"20,728 mi.","price":"$21,945","seller":"Boucher Hyundai of Janesville"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2023 Hyundai Sonata SEL","mileage":"3,345 mi.","price":"$24,712","seller":"Billingsley Hyundai"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2023 Hyundai Sonata SE","mileage":"8,290 mi.","price":"$23,500","seller":"Lithia Hyundai Of Anchorage"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2021 Hyundai Sonata N Line","mileage":"7,801 mi.","price":"$26,990","seller":"Preston Hyundai"}</td>
+    <td></td>
+  </tr></table><h2>Get used vehicle data for 'Cougar'</h2><table>
+  <tr>
+    <th>StepType</th>
+    <th>Step Description</th>
+    <th>Step Result</th>
+  </tr><tr>
+    <td>Given </td>
+    <td>user is on the Cars Shopping page</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Info</td>
+    <td>Launched: https://www.cars.com/shopping/</td>
+    <td></td>
+  </tr><tr>
+    <td>And </td>
+    <td>user selects 'Used' in Stock Type dropdown</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>And </td>
+    <td>user selects 'Mercury' in Make dropdown</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>And </td>
+    <td>user selects 'Cougar' in Model dropdown</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>And </td>
+    <td>user selects '$15,000' in Price dropdown</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>And </td>
+    <td>user selects 'All miles from' in Distance dropdown</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>And </td>
+    <td>user enters '50312' into ZIP input</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>When </td>
+    <td>user clicks Search button</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Then </td>
+    <td>Results page should be displayed with header 'Used Mercury Cougar for sale'</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Info</td>
+    <td>Count of cars found: 13 matches</td>
+    <td></td>
+  </tr><tr>
+    <td>And </td>
+    <td>log details of each used vehicle found</td>
+    <td>PASSED</td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"1996 Mercury Cougar XR7","mileage":"105,706 mi.","price":"$4,495","seller":"Maximum Auto Outlet"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"1995 Mercury Cougar XR7","mileage":"37,589 mi.","price":"$11,995","seller":"Auto Locators"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"1978 Mercury Cougar XR7","mileage":"59,562 mi.","price":"$10,757","seller":"The Car Exchange"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2002 Mercury Cougar Sport","mileage":"54,261 mi.","price":"$8,888","seller":"Whitewater Motors Inc."}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"2000 Mercury Cougar Base","mileage":"65,716 mi.","price":"$5,595","seller":"Dixon Auto Sales"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"1994 Mercury Cougar XR7","mileage":"112,435 mi.","price":"$4,495","seller":"U-save Budget Lot"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"1996 Mercury Cougar XR7","mileage":"133,230 mi.","price":"$5,988","seller":"Econo Auto Sales Inc"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"1978 Mercury Cougar XR-7","mileage":"86,287 mi.","price":"$12,500","seller":"Gateway Classic Cars"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"1994 Mercury Cougar XR7","mileage":"29,184 mi.","price":"$14,500","seller":"Gateway Classic Cars"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"1996 Mercury Cougar XR7","mileage":"40,745 mi.","price":"$12,000","seller":"Gateway Classic Cars"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"1996 Mercury Cougar XR7","mileage":"55,287 mi.","price":"$12,000","seller":"Gateway Classic Cars"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"1993 Mercury Cougar XR-7","mileage":"1 mi.","price":"$7,950","seller":"City Auto"}</td>
+    <td></td>
+  </tr><tr>
+    <td>Info</td>
+    <td>{"yearAndTrim":"1979 Mercury Cougar XR-7","mileage":"78,800 mi.","price":"$12,900","seller":"Krasniqi Auto Sales LLC"}</td>
+    <td></td>
+  </tr></table></body>
