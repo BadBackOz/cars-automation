@@ -37,7 +37,7 @@ public class CustomWebElement {
         try{
             return this.webElement.isEnabled();
         }catch (StaleElementReferenceException e){
-            System.out.println(e.getMessage());
+            System.out.println("StaleElementException: " + this.getXpath() + " --- " + e.getMessage());
             return false;
         }
     }
@@ -90,7 +90,7 @@ public class CustomWebElement {
         boolean isPresent = false;
         while(!isPresent && System.currentTimeMillis() < endTime){
             try{
-                if(this.webElement.getAttribute("class") != null){
+                if(!Configuration.getDriver().findElements(By.xpath(getXpath())).isEmpty()){
                  isPresent = true;
                 }
             }catch (Exception e){
@@ -126,6 +126,12 @@ public class CustomWebElement {
     }
 
     private String getXpath(){
-        return this.webElement.toString().split("xpath: ")[1].replaceAll("]$","");
+        String[] xpathArray = this.webElement.toString().split("xpath: ");
+        StringBuilder sb = new StringBuilder();
+        for(String xpath : xpathArray){
+            xpath = xpath.trim();
+            sb.append(xpath.replaceAll("]$","").replaceAll("^\\[\\[.* ->","").replaceAll("\\.//","//").replaceAll("->","").replaceAll("]]]","]").trim());
+        }
+        return sb.toString();
     }
 }
