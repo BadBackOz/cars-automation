@@ -1,5 +1,6 @@
 package com.ohz.util;
 
+import com.ohz.common.Configuration;
 import com.ohz.elements.CustomDropdownWebElement;
 import com.ohz.elements.CustomWebElement;
 import com.ohz.elements.CustomInputWebElement;
@@ -23,16 +24,21 @@ public class CustomElementFieldDecorator implements FieldDecorator {
 
         FindBy findBy = field.getAnnotation(FindBy.class);
 
-        if (findBy != null) {
-            WebElement webElement = searchContext.findElement(By.xpath(findBy.xpath()));
+        try {
+            if (findBy != null) {
+                WebElement webElement = searchContext.findElement(By.xpath(findBy.xpath()));
 
-            if (CustomInputWebElement.class.isAssignableFrom(field.getType())) {
-                return new CustomInputWebElement(webElement);
-            } else if (CustomWebElement.class.isAssignableFrom(field.getType())) {
-                return new CustomWebElement(webElement);
-            } else if (CustomDropdownWebElement.class.isAssignableFrom(field.getType())) {
-                return new CustomDropdownWebElement(webElement);
+                if (CustomInputWebElement.class.isAssignableFrom(field.getType())) {
+                    return new CustomInputWebElement(webElement);
+                } else if (CustomWebElement.class.isAssignableFrom(field.getType())) {
+                    return new CustomWebElement(webElement);
+                } else if (CustomDropdownWebElement.class.isAssignableFrom(field.getType())) {
+                    return new CustomDropdownWebElement(webElement);
+                }
             }
+        } catch (Exception e) {
+            //Configuration.getScenario().log("Exception thrown: %s".formatted(e));
+            return null;
         }
 
         return null;

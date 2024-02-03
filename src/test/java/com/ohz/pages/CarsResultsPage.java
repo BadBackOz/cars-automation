@@ -14,7 +14,7 @@ public class CarsResultsPage extends HomepageBaseTestPage {
     @FindBy(xpath = "//span[@class='total-filter-count']")
     public CustomWebElement textTotalFilterCount;
 
-    @FindBy(xpath = "//div[@class='vehicle-card']")
+    @FindBy(xpath = "//div[@class='vehicle-details']")
     public CustomWebElement vehicleCardContainerList;
 
     @FindBy(xpath = "//a[text()='Next'] | //button[text()='Next']")
