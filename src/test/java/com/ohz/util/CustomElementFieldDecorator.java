@@ -1,44 +1,25 @@
 package com.ohz.util;
 
-import com.ohz.common.Configuration;
 import com.ohz.elements.CustomDropdownWebElement;
-import com.ohz.elements.CustomWebElement;
 import com.ohz.elements.CustomInputWebElement;
-import org.openqa.selenium.By;
-import org.openqa.selenium.SearchContext;
-import org.openqa.selenium.WebElement;
+import com.ohz.elements.CustomWebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.pagefactory.FieldDecorator;
 
 import java.lang.reflect.Field;
 
 public class CustomElementFieldDecorator implements FieldDecorator {
-    private final SearchContext searchContext;
 
-    public CustomElementFieldDecorator(SearchContext searchContext) {
-        this.searchContext = searchContext;
-    }
 
     @Override
     public Object decorate(ClassLoader loader, Field field) {
-
         FindBy findBy = field.getAnnotation(FindBy.class);
-
-        try {
-            if (findBy != null) {
-                WebElement webElement = searchContext.findElement(By.xpath(findBy.xpath()));
-
-                if (CustomInputWebElement.class.isAssignableFrom(field.getType())) {
-                    return new CustomInputWebElement(webElement);
-                } else if (CustomWebElement.class.isAssignableFrom(field.getType())) {
-                    return new CustomWebElement(webElement);
-                } else if (CustomDropdownWebElement.class.isAssignableFrom(field.getType())) {
-                    return new CustomDropdownWebElement(webElement);
-                }
-            }
-        } catch (Exception e) {
-            //Configuration.getScenario().log("Exception thrown: %s".formatted(e));
-            return null;
+        if (CustomInputWebElement.class.isAssignableFrom(field.getType())) {
+            return new CustomInputWebElement(findBy.xpath());
+        } else if (CustomWebElement.class.isAssignableFrom(field.getType())) {
+            return new CustomWebElement(findBy.xpath());
+        } else if (CustomDropdownWebElement.class.isAssignableFrom(field.getType())) {
+            return new CustomDropdownWebElement(findBy.xpath());
         }
 
         return null;

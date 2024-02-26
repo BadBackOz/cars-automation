@@ -32,7 +32,7 @@ public class CarsShoppingPage extends HomepageBaseTestPage {
     public CustomWebElement buttonSearch;
 
     public CarsShoppingPage(){
-        PageFactory.initElements(new CustomElementFieldDecorator(this.getDriver()), this);
+        PageFactory.initElements(new CustomElementFieldDecorator(), this);
     }
 
 }
