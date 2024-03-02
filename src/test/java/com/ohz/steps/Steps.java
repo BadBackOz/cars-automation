@@ -29,48 +29,54 @@ public class Steps {
     public void launchCarsShoppingPage(){
         HomepageBaseTestPage baseTestPage = new HomepageBaseTestPage();
         baseTestPage.launchCarsWebApp();
+        CustomWebElement popUp = new CustomWebElement("//div[@role='document']//button[@part='close-button']");
+        if(popUp.isDisplayed(5)){
+            popUp.click();
+        }
     }
 
     @And("user selects {string} in Stock Type dropdown")
     public void selectStockType(String stockType){
         CarsShoppingPage csp = new CarsShoppingPage();
-        csp.dropdownStockType.selectOptionByVisibleText(stockType);
+        csp.dropdownStockType.selectOptionByVisibleText(stockType, 5);
     }
 
     @And("user selects {string} in Make dropdown")
     public void selectMake(String make){
         CarsShoppingPage csp = new CarsShoppingPage();
-        csp.dropdownMake.selectOptionByVisibleText(make);
+        csp.dropdownMake.selectOptionByVisibleText(make, 5);
     }
 
     @And("user selects {string} in Model dropdown")
     public void selectModel(String model){
         CarsShoppingPage csp = new CarsShoppingPage();
-        csp.dropdownModel.selectOptionByVisibleText(model);
+        csp.dropdownModel.selectOptionByVisibleText(model, 5);
     }
 
     @And("user selects {string} in Price dropdown")
     public void selectPrice(String price){
         CarsShoppingPage csp = new CarsShoppingPage();
-        csp.dropdownPrice.selectOptionByVisibleText(price);
+        csp.dropdownPrice.selectOptionByVisibleText(price, 5);
     }
 
     @And("user selects {string} in Distance dropdown")
     public void selectDistance(String distance){
         CarsShoppingPage csp = new CarsShoppingPage();
-        csp.dropdownDistance.selectOptionByVisibleText(distance);
+        csp.dropdownDistance.selectOptionByVisibleText(distance, 5);
     }
 
     @And("user enters {string} into ZIP input")
     public void enterZip(String zipCode){
         CarsShoppingPage csp = new CarsShoppingPage();
-        csp.inputZip.type(zipCode);
+        csp.inputZip.type(zipCode, 5);
     }
 
     @When("user clicks Search button")
     public void performSearch(){
         CarsShoppingPage csp = new CarsShoppingPage();
         csp.buttonSearch.javascriptClick();
+        CarsResultsPage resultsPage = new CarsResultsPage();
+        resultsPage.vehicleCardContainerList.waitForPresent(10, false);
     }
 
     @Then("Results page should be displayed with header {string}")
@@ -84,7 +90,7 @@ public class Steps {
     public void verifyModelDropdownOptions(String make) {
         CarsShoppingPage csp = new CarsShoppingPage();
 
-        csp.dropdownModel.verifyOptions(DropdownOptionMapper.getNewModelsForMake(make));
+        csp.dropdownModel.verifyOptions(DropdownOptionMapper.getNewModelsForMake(make), 5);
     }
 
     @And("log details of each used vehicle found")
@@ -95,7 +101,7 @@ public class Steps {
 
             List<CustomWebElement> listOfVehicleData = page.vehicleCardContainerList.getListOfElement();
             String firstVehicle = listOfVehicleData.getFirst().findElement(By.xpath(".//a/h2")).getText();
-            for(CustomWebElement customWebElement : page.vehicleCardContainerList.getListOfElement()){
+            for(CustomWebElement customWebElement : listOfVehicleData){
                 VehicleData vehicleData = new VehicleData();
                 vehicleData.setYearAndTrim(customWebElement.findElement(By.xpath(".//a/h2")).getText());
                 vehicleData.setMileage(customWebElement.findElement(By.xpath(".//div[@class='mileage']")).getText());
