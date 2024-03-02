@@ -25,7 +25,7 @@ public class CucumberTestNGRunner extends AbstractTestNGCucumberTests {
     }
 
     @AfterMethod
-    public void afterMethod(){
+    public void afterMethod(){;
         Configuration.getDriver().quit();
         Configuration.removeWebDriver();
         Configuration.removeScenario();

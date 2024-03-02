@@ -6,6 +6,8 @@ import com.ohz.util.CustomElementFieldDecorator;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import java.util.List;
+
 public class CarsResultsPage extends HomepageBaseTestPage {
 
     @FindBy(xpath = "//h1")
@@ -21,7 +23,7 @@ public class CarsResultsPage extends HomepageBaseTestPage {
     public CustomWebElement linkNextPage;
 
     public CarsResultsPage(){
-        PageFactory.initElements(new CustomElementFieldDecorator(this.getDriver()), this);
+        PageFactory.initElements(new CustomElementFieldDecorator(), this);
     }
 
 }
