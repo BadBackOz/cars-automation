@@ -12,7 +12,6 @@ Feature: Scenarios for performing car search
     And user enters '50131' into ZIP input
     When user clicks Search button
     Then Results page should be displayed with header '<Header>'
-    And log scenario details
 
     Examples:
       | StockType       | Make      | Model          | Price   | Distance       | Header                                                         |
@@ -29,7 +28,6 @@ Feature: Scenarios for performing car search
     And user selects '<StockType>' in Stock Type dropdown
     When user selects '<Make>' in Make dropdown
     Then model dropdown should contain expected new model options for Make '<Make>'
-    And log scenario details
 
     Examples:
       | StockType | Make  |
@@ -48,7 +46,6 @@ Feature: Scenarios for performing car search
     When user clicks Search button
     Then Results page should be displayed with header '<Header>'
     And log details of each used vehicle found
-    And log scenario details
 
     Examples:
       | StockType | Make    | Model  | Price   | Distance       | Header                                                     |
