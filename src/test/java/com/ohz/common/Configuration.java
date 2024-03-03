@@ -46,18 +46,16 @@ public class Configuration {
 
     public static void logWithScreenshot(String textToLog){
 
-        byte[] bytes = ((ChromeDriver)Configuration.getDriver()).getScreenshotAs(OutputType.BYTES);
-        String imageString = Base64.getEncoder().encodeToString(bytes);
+        String imageString = ((ChromeDriver) Configuration.getDriver()).getScreenshotAs(OutputType.BASE64);
         String screenshotToLog = String.format("<button style='background-color:blue; color:white;' type='button' onClick=displayImage('data:image/png;base64,%s')>View Image</button>", imageString);
 
         getScenario().log(String.format("%s --- %s",textToLog, screenshotToLog));
     }
 
     public static void takeAndLogScreenshot(){
-        byte[] bytes = ((ChromeDriver)Configuration.getDriver()).getScreenshotAs(OutputType.BYTES);
-        String imageString = Base64.getEncoder().encodeToString(bytes);
+        String imageString = ((ChromeDriver) Configuration.getDriver()).getScreenshotAs(OutputType.BASE64);
 
-        Configuration.getScenario().log(String.format("<button style='background-color:blue; color:white;' type='button' onClick=displayImage('data:image/png;base64,%s')>View Image</button>", imageString));
+        getScenario().log(String.format("<button style='background-color:blue; color:white;' type='button' onClick=displayImage('data:image/png;base64,%s')>View Image</button>", imageString));
     }
 
     public static HashMap<String, String> getExcelData() {
@@ -89,7 +87,6 @@ public class Configuration {
     }
 
     private static HashMap<String, String> getDataFromExcelFile(String filePath, String sheetName, String key) {
-        StackTraceElement[] stackTrace = Thread.currentThread().getStackTrace();
         HashMap<String, String> testData = new HashMap<>();
         if (null != filePath && null != sheetName && null != key) {
             try (FileInputStream fileInputStream = new FileInputStream(filePath)) {
