@@ -29,6 +29,7 @@ public class CucumberTestNGRunner extends AbstractTestNGCucumberTests {
         Configuration.getDriver().quit();
         Configuration.removeWebDriver();
         Configuration.removeScenario();
+        Configuration.removeExcelData();
     }
 
     @AfterSuite

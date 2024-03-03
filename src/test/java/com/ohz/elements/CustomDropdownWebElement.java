@@ -8,6 +8,7 @@ import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class CustomDropdownWebElement {
 
@@ -53,7 +54,7 @@ public class CustomDropdownWebElement {
         select.selectByVisibleText(text);
     }
 
-    public void verifyOptions(ArrayList<String> expectedOptions, int timeoutInSeconds) {
+    public void verifyOptions(List<String> expectedOptions, int timeoutInSeconds) {
         waitForPresent(timeoutInSeconds);
         Select select = new Select(webElement);
 
