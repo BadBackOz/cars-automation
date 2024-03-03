@@ -17,6 +17,8 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.By;
 
+import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
 
 public class Steps {
@@ -38,12 +40,22 @@ public class Steps {
     @And("user selects {string} in Stock Type dropdown")
     public void selectStockType(String stockType){
         CarsShoppingPage csp = new CarsShoppingPage();
+
+        HashMap<String, String> data = Configuration.getExcelData();
+        if(!data.isEmpty()){
+            stockType = data.get("stockType");
+        }
         csp.dropdownStockType.selectOptionByVisibleText(stockType, 5);
     }
 
     @And("user selects {string} in Make dropdown")
     public void selectMake(String make){
         CarsShoppingPage csp = new CarsShoppingPage();
+
+        HashMap<String, String> data = Configuration.getExcelData();
+        if(!data.isEmpty()){
+            make = data.get("make");
+        }
         csp.dropdownMake.selectOptionByVisibleText(make, 5);
     }
 
@@ -90,7 +102,15 @@ public class Steps {
     public void verifyModelDropdownOptions(String make) {
         CarsShoppingPage csp = new CarsShoppingPage();
 
-        csp.dropdownModel.verifyOptions(DropdownOptionMapper.getNewModelsForMake(make), 5);
+        HashMap<String, String> data = Configuration.getExcelData();
+        List<String> expectedModels;
+        if(!data.isEmpty()){
+            expectedModels = Arrays.stream(data.get("expectedModels").split(",")).toList();
+        }else {
+            expectedModels = DropdownOptionMapper.getNewModelsForMake(make);
+        }
+
+        csp.dropdownModel.verifyOptions(expectedModels, 5);
     }
 
     @And("log details of each used vehicle found")

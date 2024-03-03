@@ -52,3 +52,13 @@ Feature: Scenarios for performing car search
       #| Used      | Audi    | A6     | $20,000 | All miles from | Used Audi A6 for sale nationwide                           |
       | Certified | Hyundai | Sonata | $30,000 | 250 miles      | Certified used Hyundai Sonata for sale near Des Moines, IA |
       | Used      | Mercury | Cougar | $15,000 | All miles from | Used Mercury Cougar for sale nationwide                    |
+
+  @excelFilePath=src/test/resources/excelTestDataFiles/validateModelDropdownValues.xlsx
+  @excelSheet=carSearch
+  @excelKey=Buick
+  @DataDrivenScenario
+  Scenario: Validate New Model dropdown options for Buick
+    Given user is on the Cars Shopping page
+    And user selects 'excelData' in Stock Type dropdown
+    When user selects 'excelData' in Make dropdown
+    Then model dropdown should contain expected new model options for Make 'excelData'
