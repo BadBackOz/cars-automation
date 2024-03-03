@@ -56,8 +56,18 @@ Feature: Scenarios for performing car search
   @excelFilePath=src/test/resources/excelTestDataFiles/validateModelDropdownValues.xlsx
   @excelSheet=carSearch
   @excelKey=Buick
-  @DataDrivenScenario
+  @ExcelDataScenarioExample
   Scenario: Validate New Model dropdown options for Buick
+    Given user is on the Cars Shopping page
+    And user selects 'excelData' in Stock Type dropdown
+    When user selects 'excelData' in Make dropdown
+    Then model dropdown should contain expected new model options for Make 'excelData'
+
+  @excelFilePath=src/test/resources/excelTestDataFiles/validateModelDropdownValues.xlsx
+  @excelSheet=carSearch
+  @excelKey=Acura
+  @ExcelDataScenarioExample
+  Scenario: Validate New Model dropdown options for Acura
     Given user is on the Cars Shopping page
     And user selects 'excelData' in Stock Type dropdown
     When user selects 'excelData' in Make dropdown

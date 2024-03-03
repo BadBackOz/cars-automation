@@ -52,6 +52,7 @@ public class CustomDropdownWebElement {
         this.waitForPresent(timeoutInSeconds);
         Select select = new Select(webElement);
         select.selectByVisibleText(text);
+        Configuration.getScenario().log("Selected option: %s".formatted(text));
     }
 
     public void verifyOptions(List<String> expectedOptions, int timeoutInSeconds) {
@@ -81,9 +82,15 @@ public class CustomDropdownWebElement {
 
         String message = "Expected Options: %s".formatted(expectedOptions) +" --- "
                 + "Actual Options: %s".formatted(actualOptions);
-        Configuration.getScenario().log(message);
+        webElement.click();
+        Configuration.logWithScreenshot(message);
         if(!isMatch){
             Assert.fail(message);
         }
+    }
+
+    public void click() {
+        waitForPresent(10);
+        webElement.click();
     }
 }
