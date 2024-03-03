@@ -8,7 +8,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.io.FileInputStream;
 import java.io.IOException;
-import java.util.Base64;
 import java.util.HashMap;
 import java.util.concurrent.ConcurrentHashMap;
 
@@ -45,6 +44,11 @@ public class Configuration {
     }
 
     public static void logWithScreenshot(String textToLog){
+        String isLogScreenshot = String.valueOf(System.getProperty("logScreenshots"));
+        if(!isLogScreenshot.equals("true")){
+            getScenario().log(textToLog);
+            return;
+        }
 
         String imageString = ((ChromeDriver) Configuration.getDriver()).getScreenshotAs(OutputType.BASE64);
         String screenshotToLog = String.format("<button style='background-color:blue; color:white;' type='button' onClick=displayImage('data:image/png;base64,%s')>View Image</button>", imageString);
